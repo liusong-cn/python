@@ -1,0 +1,31 @@
+def mathFun(type):
+    def square(n):
+        return n*n
+    def cube(n):
+        return n*n*n
+    def factorial(n):
+        result=1
+        for index in range(2,n+1):
+            result *= index
+        return result
+    if type=='square':
+        return square
+    if type == "cube":
+        return cube
+    else:
+        return factorial
+my_fun=mathFun("cube")
+print(my_fun(5))
+
+def math_fun(type):
+    if type == 'square':
+        return lambda x:x*x
+    if type == "cube":
+        return lambda x:x*x*x
+    else:
+        return lambda x:(1+x)/2
+my_fun=math_fun('other')
+print(my_fun(5))
+
+x=map(lambda x:x*x,range(8))
+print([e for e in x])

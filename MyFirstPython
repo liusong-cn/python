@@ -1,0 +1,38 @@
+#print('hello')
+print("hello\nworld")
+"""
+x=1
+y=2
+print(x,end="")
+print(y,end="")
+
+a,b,c,d=1,3,"4",1+2j
+print(type(a),type(b),type(c),type(d))
+
+str="abc"
+print(str*2)
+
+m=complex(1,2)
+print(m)
+
+k=int(11.1,2)
+print(k)
+
+age = input("请输入您的年龄")
+age=int(age)
+print(age)
+
+a_range = range(10)
+a_list = [x*x for x in a_range]
+print(a_list)
+
+print(range(5))
+range= [x for x in range(5)]
+print(range)
+"""
+
+def sum(a,b,c):
+    return a+b-c
+print(sum(1,2,3))
+
+print(sum(c=2,a=3,b=4))
