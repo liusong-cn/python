@@ -6,5 +6,3 @@ sys.stdout.write(sys.version)
 import random as r
 
 print(r.random)
-#运算符优先级和我们理解的一致
-print(-2*4+3**2)
