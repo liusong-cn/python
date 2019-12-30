@@ -18,4 +18,23 @@ print(d)
 print(c)
 #使用内置help方法查看帮助
 #help(range)
-#查看方法声明的另一种方式，光标定位需要查看的方法上，点击view，选择quick documention或官方文档
+#查看方法声明的另一种方式，光标定位需要查看的方法上，点击view，选择quick documention或官方文档 ctrl+q
+
+#判断是否包含
+s = "hello"
+print( 'h' in s,'m' not in s)
+
+#去掉最后一个字符
+s = 'hellomyworld'
+i = -1
+for i in range(-1,-len(s),-1):
+    print(s[:i])
+
+#三引号支持跨行书写
+h = '''hello
+ today'''
+print(h)
+
+#
+s = str('好')
+print(s)
