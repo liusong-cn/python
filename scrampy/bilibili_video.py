@@ -51,6 +51,8 @@ def download(url):
     hv={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
     response=requests.get(url,headers=hv).content.decode('utf-8')
     print(url)
+    # 问号被重载，放在表示重复次数的元字符后，表示正则引擎在匹配‘？’前面的字符时尽量少匹配，给后面留下更多的机会，表示重复的元字符有：+ * {m,n}
+    # 那么就能更多的匹配字符串，也就是贪婪模式
     urls1=re.findall('"baseUrl":"(.+?)"',response)
     urls2=re.findall('"url":"(.+?)"',response)
     headers={

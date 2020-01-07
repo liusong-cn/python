@@ -2,10 +2,499 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pythonLearning/compare_operator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonLearning/operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonLearning/use_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonLearning/use_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/_sitebuiltins.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/_sitebuiltins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/concurrent/futures/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/concurrent/futures/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/dbm/dumb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/dbm/dumb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/distutils/command/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/distutils/command/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/distutils/tests/test_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/distutils/tests/test_upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/email/base64mime.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/email/base64mime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/email/feedparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/email/feedparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/fileinput.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/fileinput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/ftplib.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/ftplib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/genericpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/genericpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/http/cookiejar.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/http/cookiejar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/autocomplete_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/autocomplete_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/grep.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/grep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/help_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/help_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_help_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_help_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_replace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_squeezer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/idle_test/test_squeezer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/redirector.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/redirector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/textview.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/textview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/undo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/idlelib/undo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/lib2to3/pgen2/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/lib2to3/pgen2/conv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/lib2to3/refactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/lib2to3/refactor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/logging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/logging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/logging/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/logging/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/mailcap.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/mailcap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/mimetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/mimetypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/msilib/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/msilib/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/pathlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/pathlib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/pydoc_data/topics.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/pydoc_data/topics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/asn1crypto/x509.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/asn1crypto/x509.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/chardet/langturkishmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/chardet/langturkishmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/constantly/_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/constantly/_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/hyperlink/test/test_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/hyperlink/test/test_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/LICENSE.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna-2.8.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/idnadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/idnadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/package_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/package_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/uts46data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/idna/uts46data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/LICENSES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml-4.3.4.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/ElementInclude.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/ElementInclude.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/_elementpath.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/_elementpath.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/_elementpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/_elementpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/builder.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/builder.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/etree_api.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/_diffcommand.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/_diffcommand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/clean.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/clean.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/clean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/defs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/defs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/diff.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/diff.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/etree_defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/etree_defs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/lxml-version.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/lxml-version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/tree.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/includes/tree.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/lxml.etree.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/lxml.etree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/lxml.etree_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/lxml.etree_api.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/objectify.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/objectify.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/sax.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/sax.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/parsel/csstranslator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/parsel/csstranslator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/parsel/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/parsel/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip-19.0.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/build_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/autocompletion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/cmdoptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/main_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/cli/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/completion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/hash.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/show.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/commands/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/locations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/models/candidate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/models/format_control.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/models/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/models/link.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/operations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/operations/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/operations/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/operations/prepare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/pyproject.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/constructors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/req_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/req_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/req_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/req_tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/resolve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/deprecation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/filesystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/glibc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/hashes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/logging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/outdated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/packaging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/setuptools_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/temp_dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/typing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/utils/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/vcs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/vcs/bazaar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/vcs/git.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/vcs/mercurial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/vcs/subversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_internal/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/filewrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/certifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/certifi/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/certifi/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/big5prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/cli/chardetect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/cp949prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/escprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/escsm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/euckrprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/euctwprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/mbcssm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/sjisprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/utf8prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/chardet/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/ansi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/initialise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/colorama/winterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/sysconfig.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/manifest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/t32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/t64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/w32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/w64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distlib/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/distro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_trie/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_trie/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_trie/datrie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/html5parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treeadapters/sax.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/idnadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/intranges.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/package_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/idna/uts46data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/ipaddress.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/lockfile/symlinklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/msgpack/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/msgpack/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/msgpack/fallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/_in_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/colorlog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/envbuild.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pep517/wrappers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pkg_resources/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/progress/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/progress/bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/progress/counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/progress/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/progress/spinner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/pytoml/writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/_internal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/certs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/cookies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/hooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/sessions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/requests/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/retrying.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/_collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/filepost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/poolmanager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/retry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/ssl_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/urllib3/util/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/webencodings/labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/webencodings/mklabels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/webencodings/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/pkg_resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/requests/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/requests/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/setuptools/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/setuptools/_vendor/pyparsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3-1.25.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/_collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/connectionpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/connectionpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/_appengine_environ.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/appengine.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/appengine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/ntlmpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/pyopenssl.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/securetransport.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/securetransport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/socks.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/contrib/socks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/filepost.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/filepost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/backports/makefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/backports/makefile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/_mixin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/abnf_regexp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/builder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/iri.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/normalizers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/parseresult.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/uri.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/rfc3986/validators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/poolmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/poolmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/retry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/retry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/ssl_.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/ssl_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/timeout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/urllib3/util/wait.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/w3lib/http.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/sqlite3/test/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/sqlite3/test/factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/subprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/subprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tempfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tempfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_cgitb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_cgitb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_cmd_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_cmd_line.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_doctest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_doctest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_email/test_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_gdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_gdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_gettext.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_gettext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_htmlparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_htmlparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_httplib.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_httplib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_mimetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_mimetypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_msilib.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_msilib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_pydoc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_pydoc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_socket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_strftime.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_strftime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_timeit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_timeit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_tokenize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_urllib.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_urllib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_urllib2_localnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_urllib2_localnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_xmlrpc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_xmlrpc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_zipimport_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/test/test_zipimport_support.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/test/test_ttk/test_extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/test/test_ttk/test_extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/test/test_ttk/test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/test/test_ttk/test_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/tix.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/tix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/ttk.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/tkinter/ttk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/traceback.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/traceback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/unittest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/unittest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/unittest/test/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/unittest/test/test_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/uu.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/uu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/wsgiref/simple_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/wsgiref/simple_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Lib/zipfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Lib/zipfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip3.7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip3.7.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Tools/demo/ss1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Tools/demo/ss1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Tools/i18n/pygettext.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Tools/i18n/pygettext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Tools/pynche/StripViewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Tools/pynche/StripViewer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonEnvironment/Tools/scripts/texi2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonEnvironment/Tools/scripts/texi2html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonLearning/operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonLearning/operator1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonLearning/tuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonLearning/tuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrampy/bilibili_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrampy/bilibili_video.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,82 +505,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/tuple.py">
+        <entry file="file://$PROJECT_DIR$/scrampy/bilibili_video.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+              <folding>
+                <element signature="e#15#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Encapsulation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/dictionary.py">
+        <entry file="file://$PROJECT_DIR$/pythonLearning/tuple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="303">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Opereator.py">
+        <entry file="file://$PROJECT_DIR$/pythonLearning/operator1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/operator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/printFunc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/function.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/use_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pythonLearning/compare_operator.py">
+        <entry file="file://$PROJECT_DIR$/Opereator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="76">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="180" column="57" lean-forward="true" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -104,6 +569,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>QtCore</find>
+      <find>Fly</find>
+      <find>PrettyTable</find>
+      <find>etree</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,20 +614,28 @@
         <option value="$PROJECT_DIR$/Opereator.py" />
         <option value="$PROJECT_DIR$/LTD.py" />
         <option value="$PROJECT_DIR$/FunParm.py" />
-        <option value="$PROJECT_DIR$/pythonLearning/printFunc.py" />
         <option value="$PROJECT_DIR$/pythonLearning/dictionary.py" />
-        <option value="$PROJECT_DIR$/pythonLearning/tuple.py" />
-        <option value="$PROJECT_DIR$/pythonLearning/function.py" />
         <option value="$PROJECT_DIR$/pythonLearning/class.py" />
         <option value="$PROJECT_DIR$/pythonLearning/use_module.py" />
-        <option value="$PROJECT_DIR$/pythonLearning/operator.py" />
         <option value="$PROJECT_DIR$/pythonLearning/compare_operator.py" />
+        <option value="$PROJECT_DIR$/pythonLearning/printFunc.py" />
+        <option value="$PROJECT_DIR$/pythonLearning/function.py" />
+        <option value="$PROJECT_DIR$/vip_video.py" />
+        <option value="$PROJECT_DIR$/scrapy/secondscrapy.py" />
+        <option value="$PROJECT_DIR$/loop&amp;logic_decision.py" />
+        <option value="$PROJECT_DIR$/file_about.py" />
+        <option value="$PROJECT_DIR$/test/func_decorator.py" />
+        <option value="$PROJECT_DIR$/scrampy/vip_music.py" />
+        <option value="$PROJECT_DIR$/pythonLearning/use_debugger.py" />
+        <option value="$PROJECT_DIR$/pythonLearning/operator.py" />
+        <option value="$PROJECT_DIR$/pythonLearning/tuple.py" />
+        <option value="$PROJECT_DIR$/scrampy/bilibili_video.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+    <option name="x" value="508" />
+    <option name="y" value="14" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -166,7 +647,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,23 +661,29 @@
             </path>
             <path>
               <item name="pythonspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="pythonspace" type="462c0819:PsiDirectoryNode" />
+              <item name="scrampy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pythonEnvironment/Lib/site-packages" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonspace\pythonEnvironment\Lib\site-packages" />
       <recent name="D:\pythonspace" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonspace\scrampy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,8 +698,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.compare_operator">
-    <configuration name="class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.use_debugger">
+    <configuration name="bilibili_video" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,12 +707,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonLearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrampy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrampy/bilibili_video.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,7 +721,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="compare_operator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="func_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,12 +729,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonLearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/compare_operator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/func_decorator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,7 +743,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="function" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tuple" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,7 +756,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/function.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/tuple.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,7 +765,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="operator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="use_debugger" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,7 +778,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/operator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/use_debugger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,7 +787,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="use_module" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="vip_music" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,12 +795,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonLearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrampy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonLearning/use_module.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrampy/vip_music.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,11 +811,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.compare_operator" />
-        <item itemvalue="Python.operator" />
-        <item itemvalue="Python.use_module" />
-        <item itemvalue="Python.class" />
-        <item itemvalue="Python.function" />
+        <item itemvalue="Python.use_debugger" />
+        <item itemvalue="Python.tuple" />
+        <item itemvalue="Python.bilibili_video" />
+        <item itemvalue="Python.vip_music" />
+        <item itemvalue="Python.func_decorator" />
       </list>
     </recent_temporary>
   </component>
@@ -371,6 +857,22 @@
       <workItem from="1574477250824" duration="92000" />
       <workItem from="1574610442073" duration="1239000" />
       <workItem from="1574903191586" duration="15034000" />
+      <workItem from="1574990414913" duration="5175000" />
+      <workItem from="1575880438012" duration="3510000" />
+      <workItem from="1576639547533" duration="1390000" />
+      <workItem from="1576641005005" duration="3726000" />
+      <workItem from="1576650660795" duration="7457000" />
+      <workItem from="1576805463829" duration="1279000" />
+      <workItem from="1577240684103" duration="678000" />
+      <workItem from="1577254628903" duration="198000" />
+      <workItem from="1577694239791" duration="3698000" />
+      <workItem from="1577758239023" duration="9728000" />
+      <workItem from="1577927733299" duration="908000" />
+      <workItem from="1577929057186" duration="1280000" />
+      <workItem from="1578221059744" duration="11268000" />
+      <workItem from="1578273642413" duration="6180000" />
+      <workItem from="1578300804292" duration="1113000" />
+      <workItem from="1578360102227" duration="5143000" />
     </task>
     <task id="LOCAL-00001" summary="learn python">
       <created>1574912556934</created>
@@ -379,23 +881,51 @@
       <option name="project" value="LOCAL" />
       <updated>1574912556934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="learning python">
+      <created>1574990581644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574990581644</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vip音乐和视频爬虫">
+      <created>1577694806305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577694806305</updated>
+    </task>
+    <task id="LOCAL-00004" summary="函数学习">
+      <created>1577781528580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577781528580</updated>
+    </task>
+    <task id="LOCAL-00005" summary="b站视频和vip音乐，其中B站视频下载用到了ffmpy3第三方库以及ffmpeg程序">
+      <created>1578280767023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578280767024</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94795000" />
+    <option name="totallyTimeSpent" value="157526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.20788912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.24520256" />
       <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.16471216" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40151516" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24702059" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.40086675" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24052005" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -403,8 +933,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -416,9 +946,53 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="learn python" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn python" />
+    <MESSAGE value="learning python" />
+    <MESSAGE value="vip音乐和视频爬虫" />
+    <MESSAGE value="函数学习" />
+    <MESSAGE value="b站视频和vip音乐，其中B站视频下载用到了ffmpy3第三方库以及ffmpeg程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="b站视频和vip音乐，其中B站视频下载用到了ffmpy3第三方库以及ffmpeg程序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -434,160 +1008,151 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonspace$MyFirstPython.coverage" NAME="MyFirstPython Coverage Results" MODIFIED="1558318651340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$TestUseVarAll__1_.coverage" NAME="TestUseVarAll (1) Coverage Results" MODIFIED="1559289327064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonspace$FirstScrapy.coverage" NAME="FirstScrapy Coverage Results" MODIFIED="1559717555943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/pythonspace$MyFirstClass.coverage" NAME="MyFirstClass Coverage Results" MODIFIED="1560393922067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonspace$FirstScrapy.coverage" NAME="FirstScrapy Coverage Results" MODIFIED="1576658365147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/pythonspace$Opereator.coverage" NAME="Opereator Coverage Results" MODIFIED="1574904954681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$ModuleTest.coverage" NAME="ModuleTest Coverage Results" MODIFIED="1559200154998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonspace$tuple.coverage" NAME="tuple Coverage Results" MODIFIED="1574908538420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$vip_video.coverage" NAME="vip_video Coverage Results" MODIFIED="1576651741219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonspace$tuple.coverage" NAME="tuple Coverage Results" MODIFIED="1578361560532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$func_decorator.coverage" NAME="func_decorator Coverage Results" MODIFIED="1577777520473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/pythonspace$compare_operator.coverage" NAME="compare_operator Coverage Results" MODIFIED="1574930966964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$secondscrapy.coverage" NAME="secondscrapy Coverage Results" MODIFIED="1577695418125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/pythonspace$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1574610801684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
-    <SUITE FILE_PATH="coverage/pythonspace$function.coverage" NAME="function Coverage Results" MODIFIED="1574909993919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$function.coverage" NAME="function Coverage Results" MODIFIED="1575883939616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$UseVarAll.coverage" NAME="UseVarAll Coverage Results" MODIFIED="1577695487962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$operator.coverage" NAME="operator Coverage Results" MODIFIED="1574921809294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$Fnmatch.coverage" NAME="Fnmatch Coverage Results" MODIFIED="1559638749428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyio" />
     <SUITE FILE_PATH="coverage/pythonspace$MySecondClass.coverage" NAME="MySecondClass Coverage Results" MODIFIED="1558341302224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$FunParm.coverage" NAME="FunParm Coverage Results" MODIFIED="1574610761443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$Extend.coverage" NAME="Extend Coverage Results" MODIFIED="1558579178724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonspace$loop_logic_decision.coverage" NAME="loop&amp;logic_decision Coverage Results" MODIFIED="1577697011456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$CustomFunction.coverage" NAME="CustomFunction Coverage Results" MODIFIED="1558403617216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$Path.coverage" NAME="Path Coverage Results" MODIFIED="1559634266478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyio" />
     <SUITE FILE_PATH="coverage/pythonspace$printFunc.coverage" NAME="printFunc Coverage Results" MODIFIED="1574610842274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$bilibili_video.coverage" NAME="bilibili_video Coverage Results" MODIFIED="1578274246517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$MyFunction.coverage" NAME="MyFunction Coverage Results" MODIFIED="1558321288664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$Exception.coverage" NAME="Exception Coverage Results" MODIFIED="1559198296013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$ReferencePackage.coverage" NAME="ReferencePackage Coverage Results" MODIFIED="1559529071847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1574908438661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/pythonspace$vip_music.coverage" NAME="vip_music Coverage Results" MODIFIED="1578227692918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$LTD.coverage" NAME="LTD Coverage Results" MODIFIED="1560408925119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$class.coverage" NAME="class Coverage Results" MODIFIED="1574911453379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$use_module.coverage" NAME="use_module Coverage Results" MODIFIED="1574912404253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
-    <SUITE FILE_PATH="coverage/pythonspace$PostScrapy.coverage" NAME="PostScrapy Coverage Results" MODIFIED="1559723334815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
+    <SUITE FILE_PATH="coverage/pythonspace$PostScrapy.coverage" NAME="PostScrapy Coverage Results" MODIFIED="1577695315871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/pythonspace$Encapsulation.coverage" NAME="Encapsulation Coverage Results" MODIFIED="1558578669939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$OverRide.coverage" NAME="OverRide Coverage Results" MODIFIED="1558580259357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$MetaClass.coverage" NAME="MetaClass Coverage Results" MODIFIED="1558920831906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonspace$file_about.coverage" NAME="file_about Coverage Results" MODIFIED="1577762065720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonspace$use_debugger.coverage" NAME="use_debugger Coverage Results" MODIFIED="1578363871855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$TestUseVarAll.coverage" NAME="TestUseVarAll Coverage Results" MODIFIED="1559285817078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonModule" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test.py" />
-    <entry file="file://$PROJECT_DIR$/pythonEnvironment/OverRide.py" />
-    <entry file="file://$PROJECT_DIR$/MyFirstPython">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyFunction">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OverRide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySecondClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModuleTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Extend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonModule/UseVarAll.py" />
-    <entry file="file://$PROJECT_DIR$/pythonModule/TestUseVarAll.py" />
-    <entry file="file://$PROJECT_DIR$/pyio/a.text" />
-    <entry file="file://$PROJECT_DIR$/pyio/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyio/Path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyio/Fnmatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/FirstScrapy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
+    <entry file="file://$PROJECT_DIR$/file_about.txt" />
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="1523" column="19" lean-forward="true" selection-start-line="1523" selection-start-column="19" selection-end-line="1523" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loop&amp;logic_decision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/file_about.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/chardet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="5100" column="8" selection-start-line="5100" selection-start-column="8" selection-end-line="5100" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/secondscrapy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunParm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_about.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/func_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/PostScrapy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="418">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyModuleTest.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LTD.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/printFunc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonModuleMap/User.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="228">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonModuleMap/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/use_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="133">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -598,17 +1163,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MetaClass.py">
+    <entry file="file://$PROJECT_DIR$/pythonModuleMap/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="19">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyFirstClass.py">
+    <entry file="file://$PROJECT_DIR$/pythonModuleMap/User.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="57">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -626,6 +1191,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CustomFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vip_video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#43#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OverRide.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySecondClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UseVarAll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -633,94 +1229,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CustomFunction.py">
+    <entry file="file://$PROJECT_DIR$/MyModuleTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/lxml/etree/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/bs4/tests/test_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="1651" column="7" lean-forward="true" selection-start-line="1651" selection-start-column="7" selection-end-line="1651" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/lxml/etree/ErrorDomains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/lxml/etree/__init__/ErrorDomains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/_setmixin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="842" column="4" selection-start-line="842" selection-start-column="4" selection-end-line="842" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/html/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrampy/vip_music.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/prettytable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/ffmpy3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Encapsulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FunParm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pythonLearning/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/dictionary.py">
+    <entry file="file://$PROJECT_DIR$/use_debugger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/lxml/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/lxml/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/multiprocessing/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="262" column="8" selection-start-line="262" selection-start-column="8" selection-end-line="262" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/use_debugger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="180" column="57" lean-forward="true" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonEnvironment/Lib/site-packages/google_auth-1.10.0-py3.8-nspkg.pth">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pythonLearning/tuple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="303">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/printFunc.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/operator1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/function.py">
+    <entry file="file://$PROJECT_DIR$/scrampy/bilibili_video.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="266">
+          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+          <folding>
+            <element signature="e#15#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/class.py">
+    <entry file="file://$PROJECT_DIR$/pythonLearning/use_debugger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Opereator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/operator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1864300746/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="703" column="18" lean-forward="true" selection-start-line="703" selection-start-column="18" selection-end-line="703" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/use_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonLearning/compare_operator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="76">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>

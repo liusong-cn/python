@@ -38,3 +38,23 @@ print(h)
 #
 s = str('好')
 print(s)
+
+#测试re正则
+import re
+
+def re_test():
+    pattern = '(\w+\.)|(\d+)'
+    result = re.findall(pattern, 'www.baidu.com/1245.news/13')
+    print('测试成功')
+    print(type(result))
+    print(len(result))
+    for i in range(len(result)):
+        print(result[i])
+        print("下面是列表元素的元素，re返回的结果叫匹配对象，是列表，列表的元素为元祖，下方为元祖内的元素")
+        for j in result[i]:
+            print(j)
+
+if __name__ == '__main__':
+    print('----')
+    re_test()
+    print('~~~~~')
