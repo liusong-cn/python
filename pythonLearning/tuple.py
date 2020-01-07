@@ -54,7 +54,13 @@ def re_test():
         for j in result[i]:
             print(j)
 
+def re_test1():
+    pattern = '(\d{1})abc\(d{1})'
+    #findall在无子组时返回整个匹配的子串，有子组时返回匹配的子组
+    result = re.findall(pattern, '1abc23abc4')
+    for i in result:
+        print(i)
 if __name__ == '__main__':
     print('----')
-    re_test()
+    re_test1()
     print('~~~~~')
