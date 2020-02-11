@@ -37,7 +37,7 @@ def data(content,page):
                        'https:'+response.xpath('./div/div[1]/a/@href')[0].split('?')[0]])
         order+=1
 def make(content,page):
-    #在函数内部声明global，用于函数操作在外部变量，若为定义global，则无法操作外部变量
+    #在函数内部声明global，用于函数操作在外部变量，若未定义global，则无法操作外部变量
     global table,infors
     for i in range(1, page+1):
         data(content, i)
