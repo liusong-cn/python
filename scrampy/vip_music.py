@@ -4,7 +4,7 @@ from Crypto.Cipher import AES
 import base64,codecs
 import execjs
 
-
+#升级后废弃
 # Request URL: https://music.163.com/weapi/cloudsearch/get/web?csrf_token=
 # Request Method: POST
 url = 'https://music.163.com/weapi/cloudsearch/get/web?csrf_token='

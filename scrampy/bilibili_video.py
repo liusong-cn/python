@@ -78,12 +78,45 @@ def download(url):
         with open(path+'\%s.flv'%(url.split('/')[-1]),'wb')as f:
             f.write(requests.get (urls2[0],headers=headers).content)
         print(url.split('/')[-1] + '下载完成!')
-def start(content,page):
+def start(content,page,onlymp3):
     urls=make(content,page)
     pool=Pool(processes=4)
-    pool.map(download,urls)
+    if onlymp3:
+        pool.map(download_mp3,urls)
+    else :
+        pool.map(download,urls)
+
+def download_mp3(url):
+    global path
+    hv = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
+    response = requests.get(url, headers=hv).content.decode('utf-8')
+    print(url)
+    # 问号被重载，放在表示重复次数的元字符后，表示正则引擎在匹配‘？’前面的字符时尽量少匹配，给后面留下更多的机会，表示重复的元字符有：+ * {m,n}
+    # 那么就能更多的匹配字符串，也就是贪婪模式
+    # 括号的意义在于存在子组，表示括号内的和前面的匹配合起来是一个匹配，但是该匹配中又有一个子组
+    urls1 = re.findall('"baseUrl":"(.+?)"', response)
+    urls2 = re.findall('"url":"(.+?)"', response)
+    headers = {
+        'Referer': url,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+        # 由于采用m4s格式后，下载的视频是分段的，其中在request.header上用range来管控单个视频的大小
+        # 通过设置range如下，可以直接下载完整视频
+        'Range': 'bytes=0-'
+    }
+    if urls1 != []:
+        print(url.split('/')[-1] + '开始下载!')
+        with open(path_ + '\%s.mp3' % (url.split('/')[-1]), 'wb')as f:
+            f.write(requests.get(urls1[-1], headers=headers).content)
+        print(url.split('/')[-1] + '下载完成!')
+    else:
+        print(url.split('/')[-1] + '开始下载!')
+        with open(path + '\%s.flv' % (url.split('/')[-1]), 'wb')as f:
+            f.write(requests.get(urls2[0], headers=headers).content)
+        print(url.split('/')[-1] + '下载完成!')
 
 
 if __name__ == '__main__':
     content=input('输入内容：')
-    start(content,3)
+    #是否只下载MP3，否者下载video
+    start(content,3,True)
