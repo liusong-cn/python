@@ -23,6 +23,7 @@ age=int(age)
 print(age)
 
 a_range = range(10)
+# 列表推导式
 a_list = [x*x for x in a_range]
 print(a_list)
 
