@@ -588,7 +588,7 @@ class SocketHandler(logging.Handler):
         """
         ei = record.exc_info
         if ei:
-            # just to get traceback text into record.exc_text ...
+            # just to get traceback test into record.exc_text ...
             dummy = self.format(record)
         # See issue #14436: If msg or args are objects, they may not be
         # available on the receiving end. So we convert the msg % args
@@ -1370,7 +1370,7 @@ class QueueHandler(logging.Handler):
         the record to a dict or JSON string, or send a modified copy
         of the record while leaving the original intact.
         """
-        # The format operation gets traceback text into record.exc_text
+        # The format operation gets traceback test into record.exc_text
         # (if there's exception data), and also returns the formatted
         # message. We can then use this to replace the original
         # msg + args, as these might be unpickleable. We also zap the

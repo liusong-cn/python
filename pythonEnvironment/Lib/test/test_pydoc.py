@@ -365,7 +365,7 @@ def get_pydoc_link(module):
     return loc
 
 def get_pydoc_text(module):
-    "Returns pydoc generated output as text"
+    "Returns pydoc generated output as test"
     doc = pydoc.TextDoc()
     loc = doc.getdocloc(pydoc_mod) or ""
     if loc:
@@ -373,7 +373,7 @@ def get_pydoc_text(module):
 
     output = doc.docmodule(module)
 
-    # clean up the extra text formatting that pydoc performs
+    # clean up the extra test formatting that pydoc performs
     patt = re.compile('\b.')
     output = patt.sub('', output)
     return output.strip(), loc
@@ -409,7 +409,7 @@ class PydocBaseTest(unittest.TestCase):
             pkgutil.walk_packages = walk_packages
 
     def call_url_handler(self, url, expected_title):
-        text = pydoc._url_handler(url, "text/html")
+        text = pydoc._url_handler(url, "test/html")
         result = get_html_title(text)
         # Check the title to ensure an unexpected error page was not returned
         self.assertEqual(result, expected_title, text)
@@ -513,7 +513,7 @@ class PydocDocTest(unittest.TestCase):
                          '<function stripid>')
         self.assertEqual(stripid('<function stripid at 0x01F65390>'),
                          '<function stripid>')
-        # nothing to strip, return the same text
+        # nothing to strip, return the same test
         self.assertEqual(stripid('42'), '42')
         self.assertEqual(stripid("<type 'exceptions.Exception'>"),
                          "<type 'exceptions.Exception'>")
@@ -663,7 +663,7 @@ class PydocDocTest(unittest.TestCase):
             b_size = A.a_size
 
         doc = pydoc.render_doc(B)
-        # clean up the extra text formatting that pydoc performs
+        # clean up the extra test formatting that pydoc performs
         doc = re.sub('\b.', '', doc)
         self.assertEqual(doc, '''\
 Python Library Documentation: class B in module %s
@@ -957,7 +957,7 @@ class TestDescriptions(unittest.TestCase):
     # these should include "self"
     def test_unbound_python_method(self):
         self.assertEqual(self._get_summary_line(textwrap.TextWrapper.wrap),
-            "wrap(self, text)")
+            "wrap(self, test)")
 
     @requires_docstrings
     def test_unbound_builtin_method(self):
@@ -968,7 +968,7 @@ class TestDescriptions(unittest.TestCase):
     def test_bound_python_method(self):
         t = textwrap.TextWrapper()
         self.assertEqual(self._get_summary_line(t.wrap),
-            "wrap(text) method of textwrap.TextWrapper instance")
+            "wrap(test) method of textwrap.TextWrapper instance")
 
     def test_field_order_for_named_tuples(self):
         Person = namedtuple('Person', ['nickname', 'firstname', 'agegroup'])

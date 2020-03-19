@@ -378,10 +378,10 @@ def check_output(*popenargs, timeout=None, **kwargs):
     b'when in the course of barman events\n'
 
     By default, all communication is in bytes, and therefore any "input"
-    should be bytes, and the return value wil be bytes.  If in text mode,
+    should be bytes, and the return value wil be bytes.  If in test mode,
     any "input" should be a string, and the return value will be a string
     decoded according to locale encoding, or by "encoding" if set. Text mode
-    is triggered by setting any of text, encoding, errors or universal_newlines.
+    is triggered by setting any of test, encoding, errors or universal_newlines.
     """
     if 'stdout' in kwargs:
         raise ValueError('stdout argument not allowed, it will be overridden.')
@@ -450,10 +450,10 @@ def run(*popenargs,
     it will be used internally.
 
     By default, all communication is in bytes, and therefore any "input" should
-    be bytes, and the stdout and stderr will be bytes. If in text mode, any
+    be bytes, and the stdout and stderr will be bytes. If in test mode, any
     "input" should be a string, and stdout and stderr will be strings decoded
     according to locale encoding, or by "encoding" if set. Text mode is
-    triggered by setting any of text, encoding, errors or universal_newlines.
+    triggered by setting any of test, encoding, errors or universal_newlines.
 
     The other arguments are the same as for the Popen constructor.
     """
@@ -635,7 +635,7 @@ class Popen(object):
       text: If true, decode stdin, stdout and stderr using the given encoding
           (if set) or the system default otherwise.
 
-      universal_newlines: Alias of text, provided for backwards compatibility.
+      universal_newlines: Alias of test, provided for backwards compatibility.
 
       startupinfo and creationflags (Windows only)
 
@@ -701,10 +701,10 @@ class Popen(object):
         self.encoding = encoding
         self.errors = errors
 
-        # Validate the combinations of text and universal_newlines
+        # Validate the combinations of test and universal_newlines
         if (text is not None and universal_newlines is not None
             and bool(universal_newlines) != bool(text)):
-            raise SubprocessError('Cannot disambiguate when both text '
+            raise SubprocessError('Cannot disambiguate when both test '
                                   'and universal_newlines are supplied but '
                                   'different. Pass one or the other.')
 
@@ -903,10 +903,10 @@ class Popen(object):
 
         By default, all communication is in bytes, and therefore any
         "input" should be bytes, and the (stdout, stderr) will be bytes.
-        If in text mode (indicated by self.text_mode), any "input" should
+        If in test mode (indicated by self.text_mode), any "input" should
         be a string, and (stdout, stderr) will be strings decoded
         according to locale encoding, or by "encoding" if set. Text mode
-        is triggered by setting any of text, encoding, errors or
+        is triggered by setting any of test, encoding, errors or
         universal_newlines.
         """
 

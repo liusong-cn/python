@@ -545,7 +545,7 @@ class Widget(tkinter.Widget):
 
         LABEL WIDGET OPTIONS
 
-            text, textvariable, underline, image, compound, width
+            test, textvariable, underline, image, compound, width
 
         WIDGET STATES
 
@@ -605,7 +605,7 @@ class Button(Widget):
         STANDARD OPTIONS
 
             class, compound, cursor, image, state, style, takefocus,
-            text, textvariable, underline, width
+            test, textvariable, underline, width
 
         WIDGET-SPECIFIC OPTIONS
 
@@ -628,7 +628,7 @@ class Checkbutton(Widget):
         STANDARD OPTIONS
 
             class, compound, cursor, image, state, style, takefocus,
-            text, textvariable, underline, width
+            test, textvariable, underline, width
 
         WIDGET-SPECIFIC OPTIONS
 
@@ -649,7 +649,7 @@ class Checkbutton(Widget):
 
 
 class Entry(Widget, tkinter.Entry):
-    """Ttk Entry widget displays a one-line text string and allows that
+    """Ttk Entry widget displays a one-line test string and allows that
     string to be edited by the user."""
 
     def __init__(self, master=None, widget=None, **kw):
@@ -691,7 +691,7 @@ class Entry(Widget, tkinter.Entry):
 
 
 class Combobox(Entry):
-    """Ttk Combobox widget combines a text field with a pop-down list of
+    """Ttk Combobox widget combines a test field with a pop-down list of
     values."""
 
     def __init__(self, master=None, **kw):
@@ -750,20 +750,20 @@ class Label(Widget):
 
         STANDARD OPTIONS
 
-            class, compound, cursor, image, style, takefocus, text,
+            class, compound, cursor, image, style, takefocus, test,
             textvariable, underline, width
 
         WIDGET-SPECIFIC OPTIONS
 
             anchor, background, font, foreground, justify, padding,
-            relief, text, wraplength
+            relief, test, wraplength
         """
         Widget.__init__(self, master, "ttk::label", kw)
 
 
 class Labelframe(Widget):
     """Ttk Labelframe widget is a container used to group other widgets
-    together. It has an optional label, which may be a plain text string
+    together. It has an optional label, which may be a plain test string
     or another widget."""
 
     def __init__(self, master=None, **kw):
@@ -774,7 +774,7 @@ class Labelframe(Widget):
             class, cursor, style, takefocus
 
         WIDGET-SPECIFIC OPTIONS
-            labelanchor, text, underline, padding, labelwidget, width,
+            labelanchor, test, underline, padding, labelwidget, width,
             height
         """
         Widget.__init__(self, master, "ttk::labelframe", kw)
@@ -792,7 +792,7 @@ class Menubutton(Widget):
         STANDARD OPTIONS
 
             class, compound, cursor, image, state, style, takefocus,
-            text, textvariable, underline, width
+            test, textvariable, underline, width
 
         WIDGET-SPECIFIC OPTIONS
 
@@ -819,7 +819,7 @@ class Notebook(Widget):
 
         TAB OPTIONS
 
-            state, sticky, padding, text, image, compound, underline
+            state, sticky, padding, test, image, compound, underline
 
         TAB IDENTIFIERS (tab_id)
 
@@ -1045,7 +1045,7 @@ class Radiobutton(Widget):
         STANDARD OPTIONS
 
             class, compound, cursor, image, state, style, takefocus,
-            text, textvariable, underline, width
+            test, textvariable, underline, width
 
         WIDGET-SPECIFIC OPTIONS
 
@@ -1199,7 +1199,7 @@ class Treeview(Widget, tkinter.XView, tkinter.YView):
 
         ITEM OPTIONS
 
-            text, image, values, open, tags
+            test, image, values, open, tags
 
         TAG OPTIONS
 
@@ -1281,13 +1281,13 @@ class Treeview(Widget, tkinter.XView, tkinter.YView):
         Otherwise, sets the options to the corresponding values.
 
         Valid options/values are:
-            text: text
-                The text to display in the column heading
+            test: test
+                The test to display in the column heading
             image: image_name
                 Specifies an image to display to the right of the column
                 heading
             anchor: anchor
-                Specifies how the heading text should be aligned. One of
+                Specifies how the heading test should be aligned. One of
                 the standard Tk anchor values
             command: callback
                 A callback to be invoked when the heading label is
@@ -1602,7 +1602,7 @@ class LabeledScale(Frame):
             return
 
         self._last_valid = newval
-        self.label['text'] = newval
+        self.label['test'] = newval
         self.after_idle(adjust_label)
 
     @property

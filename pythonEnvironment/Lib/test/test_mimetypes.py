@@ -18,7 +18,7 @@ class MimeTypesTestCase(unittest.TestCase):
 
     def test_default_data(self):
         eq = self.assertEqual
-        eq(self.db.guess_type("foo.html"), ("text/html", None))
+        eq(self.db.guess_type("foo.html"), ("test/html", None))
         eq(self.db.guess_type("foo.tgz"), ("application/x-tar", "gzip"))
         eq(self.db.guess_type("foo.tar.gz"), ("application/x-tar", "gzip"))
         eq(self.db.guess_type("foo.tar.Z"), ("application/x-tar", "compress"))
@@ -28,9 +28,9 @@ class MimeTypesTestCase(unittest.TestCase):
     def test_data_urls(self):
         eq = self.assertEqual
         guess_type = self.db.guess_type
-        eq(guess_type("data:,thisIsTextPlain"), ("text/plain", None))
-        eq(guess_type("data:;base64,thisIsTextPlain"), ("text/plain", None))
-        eq(guess_type("data:text/x-foo,thisIsTextXFoo"), ("text/x-foo", None))
+        eq(guess_type("data:,thisIsTextPlain"), ("test/plain", None))
+        eq(guess_type("data:;base64,thisIsTextPlain"), ("test/plain", None))
+        eq(guess_type("data:test/x-foo,thisIsTextXFoo"), ("test/x-foo", None))
 
     def test_file_parsing(self):
         eq = self.assertEqual
@@ -46,7 +46,7 @@ class MimeTypesTestCase(unittest.TestCase):
         eq(self.db.guess_type('foo.xul', strict=True), (None, None))
         eq(self.db.guess_extension('image/jpg', strict=True), None)
         # And then non-strict
-        eq(self.db.guess_type('foo.xul', strict=False), ('text/xul', None))
+        eq(self.db.guess_type('foo.xul', strict=False), ('test/xul', None))
         eq(self.db.guess_extension('image/jpg', strict=False), '.jpg')
 
     def test_guess_all_types(self):
@@ -55,7 +55,7 @@ class MimeTypesTestCase(unittest.TestCase):
         # First try strict.  Use a set here for testing the results because if
         # test_urllib2 is run before test_mimetypes, global state is modified
         # such that the 'all' set will have more items in it.
-        all = set(self.db.guess_all_extensions('text/plain', strict=True))
+        all = set(self.db.guess_all_extensions('test/plain', strict=True))
         unless(all >= set(['.bat', '.c', '.h', '.ksh', '.pl', '.txt']))
         # And now non-strict
         all = self.db.guess_all_extensions('image/jpg', strict=False)
@@ -97,7 +97,7 @@ class Win32MimeTypesTestCase(unittest.TestCase):
         # Windows registry is undocumented AFAIK.
         # Use file types that should *always* exist:
         eq = self.assertEqual
-        eq(self.db.guess_type("foo.txt"), ("text/plain", None))
+        eq(self.db.guess_type("foo.txt"), ("test/plain", None))
         eq(self.db.guess_type("image.jpg"), ("image/jpeg", None))
         eq(self.db.guess_type("image.png"), ("image/png", None))
 

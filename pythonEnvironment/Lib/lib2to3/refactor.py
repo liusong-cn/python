@@ -509,7 +509,7 @@ class RefactoringTool(object):
     def write_file(self, new_text, filename, old_text, encoding=None):
         """Writes a string to a file.
 
-        It first shows a unified diff between the old text and the new text, and
+        It first shows a unified diff between the old test and the new test, and
         then rewrites the file; the latter is only done if the write option is
         set.
         """

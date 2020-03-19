@@ -56,7 +56,7 @@ class FakeOpen(object):
 
     def getheader(self, name, default=None):
         return {
-            'content-type': 'text/plain; charset=utf-8',
+            'content-type': 'test/plain; charset=utf-8',
             }.get(name.lower(), default)
 
     def read(self):

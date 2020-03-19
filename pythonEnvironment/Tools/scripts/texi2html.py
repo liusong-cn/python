@@ -75,7 +75,7 @@ blprog = re.compile('^[ \t]*$')                   # Blank line
 kwprog = re.compile('@[a-z]+')                    # Keyword (embedded, usually
                                                   # with {} args)
 spprog = re.compile('[\n@{}&<>]')                 # Special characters in
-                                                  # running text
+                                                  # running test
                                                   #
                                                   # menu item (Yuck!)
 miprog = re.compile(r'^\* ([^:]*):(:|[ \t]*([^\t,\n.]+)([^ \t\n]*))[ \t\n]*')
@@ -198,7 +198,7 @@ class TexinfoParser:
                         + FN_ID_PATTERN + '</A>'
     FN_TARGET_PATTERN = '<A NAME=footnotetext%(id)s' \
                         ' HREF="#footnoteref%(id)s">' \
-                        + FN_ID_PATTERN + '</A>\n%(text)s<P>\n'
+                        + FN_ID_PATTERN + '</A>\n%(test)s<P>\n'
     FN_HEADER = '\n<P>\n<HR NOSHADE SIZE=1 WIDTH=200>\n' \
                 '<STRONG><EM>Footnotes</EM></STRONG>\n<P>'
 
@@ -214,8 +214,8 @@ class TexinfoParser:
         self.nodefp = None      # open file we're writing to
         self.nodelineno = 0     # Linenumber relative to node
         self.links = None       # Links from current node
-        self.savetext = None    # If not None, save text head instead
-        self.savestack = []     # If not None, save text head instead
+        self.savetext = None    # If not None, save test head instead
+        self.savestack = []     # If not None, save test head instead
         self.htmlhelp = None    # html help data
         self.dirname = 'tmp'    # directory where files are created
         self.includedir = '.'   # directory to search @include files
@@ -317,14 +317,14 @@ class TexinfoParser:
                 self.nodestack[-1].flush()
                 del self.nodestack[-1]
 
-    # Start saving text in a buffer instead of writing it to a file
+    # Start saving test in a buffer instead of writing it to a file
     def startsaving(self):
         if self.savetext is not None:
             self.savestack.append(self.savetext)
-            # print '*** Recursively saving text, expect trouble'
+            # print '*** Recursively saving test, expect trouble'
         self.savetext = ''
 
-    # Return the text saved so far and start writing to file again
+    # Return the test saved so far and start writing to file again
     def collectsavings(self):
         savetext = self.savetext
         if len(self.savestack) > 0:
@@ -334,7 +334,7 @@ class TexinfoParser:
             self.savetext = None
         return savetext or ''
 
-    # Write text to file, or save it in a buffer, or ignore it
+    # Write test to file, or save it in a buffer, or ignore it
     def write(self, *args):
         try:
             text = ''.join(args)
@@ -351,7 +351,7 @@ class TexinfoParser:
     # Complete the current node -- write footnotes and close file
     def endnode(self):
         if self.savetext is not None:
-            print('*** Still saving text at end of node')
+            print('*** Still saving test at end of node')
             dummy = self.collectsavings()
         if self.footnotes:
             self.writefootnotes()
@@ -380,7 +380,7 @@ class TexinfoParser:
         self.nodename = ''
 
     # Process a list of lines, expanding embedded @-commands
-    # This mostly distinguishes between menus and normal text
+    # This mostly distinguishes between menus and normal test
     def process(self, accu):
         if self.debugging > 1:
             print('!'*self.debugging, 'process:', self.skip, self.stack, end=' ')
@@ -779,7 +779,7 @@ class TexinfoParser:
 
     # --- Other @xxx{...} commands ---
 
-    def open_(self): pass # Used by {text enclosed in braces}
+    def open_(self): pass # Used by {test enclosed in braces}
     def close_(self): pass
 
     open_asis = open_
@@ -818,7 +818,7 @@ class TexinfoParser:
         self.write(self.FN_HEADER)
         for id, text in self.footnotes:
             self.write(self.FN_TARGET_PATTERN
-                       % {'id': repr(id), 'text': text})
+                       % {'id': repr(id), 'test': text})
         self.footnotes = []
 
     def open_file(self): self.write('<CODE>')
@@ -1203,7 +1203,7 @@ class TexinfoParser:
 
     # --- Page lay-out ---
 
-    # These commands are only meaningful in printed text
+    # These commands are only meaningful in printed test
 
     def do_page(self, args): pass
 
@@ -1642,7 +1642,7 @@ class TexinfoParserHTML3(TexinfoParser):
                         'HREF="#footnotetext%(id)s">' + FN_ID_PATTERN + '</A>'
     FN_TARGET_PATTERN = '<FN ID=footnotetext%(id)s>\n' \
                         '<P><A HREF="#footnoteref%(id)s">' + FN_ID_PATTERN \
-                        + '</A>\n%(text)s</P></FN>\n'
+                        + '</A>\n%(test)s</P></FN>\n'
     FN_HEADER = '<DIV CLASS=footnotes>\n  <HR NOSHADE WIDTH=200>\n' \
                 '  <STRONG><EM>Footnotes</EM></STRONG>\n  <P>\n'
 
@@ -1783,7 +1783,7 @@ class HTMLHelp:
             print('Index file=' + indexfile + '', file=fp)
             print('Title=' + title + '', file=fp)
             print('Display compile progress=Yes', file=fp)
-            print('Full-text search=Yes', file=fp)
+            print('Full-test search=Yes', file=fp)
             print('Default window=main', file=fp)
             print('', file=fp)
             print('[WINDOWS]', file=fp)
@@ -1811,7 +1811,7 @@ class HTMLHelp:
             print('<!-- Sitemap 1.0 -->', file=fp)
             print('</HEAD>', file=fp)
             print('<BODY>', file=fp)
-            print('   <OBJECT type="text/site properties">', file=fp)
+            print('   <OBJECT type="test/site properties">', file=fp)
             print('     <param name="Window Styles" value="0x800025">', file=fp)
             print('     <param name="comment" value="title:">', file=fp)
             print('     <param name="comment" value="base:">', file=fp)
@@ -1836,7 +1836,7 @@ class HTMLHelp:
             print('<!-- Sitemap 1.0 -->', file=fp)
             print('</HEAD>', file=fp)
             print('<BODY>', file=fp)
-            print('<OBJECT type="text/site properties">', file=fp)
+            print('<OBJECT type="test/site properties">', file=fp)
             print('</OBJECT>', file=fp)
             self.dumpindex(fp)
             print('</BODY>', file=fp)
@@ -1875,7 +1875,7 @@ class HTMLHelp:
 
             # Print info for this node
             print(' '*indent, end=' ', file=outfile)
-            print('<LI><OBJECT type="text/sitemap">', end=' ', file=outfile)
+            print('<LI><OBJECT type="test/sitemap">', end=' ', file=outfile)
             print('<param name="Name" value="' + nodename +'">', end=' ', file=outfile)
             print('<param name="Local" value="'+ filename +'">', end=' ', file=outfile)
             print('</OBJECT>', file=outfile)
@@ -1916,7 +1916,7 @@ class HTMLHelp:
             key = self.codeexpand(key)
             location = makefile(location)
             location = self.dirname + '/' + location
-            print('<LI><OBJECT type="text/sitemap">', end=' ', file=outfile)
+            print('<LI><OBJECT type="test/sitemap">', end=' ', file=outfile)
             print('<param name="Name" value="' + key + '">', end=' ', file=outfile)
             print('<param name="Local" value="' + location + '">', end=' ', file=outfile)
             print('</OBJECT>', file=outfile)

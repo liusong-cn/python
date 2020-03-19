@@ -999,7 +999,7 @@ class TestTokenizerAdheresToPep0263(TestCase):
     def test_latin1_coding_cookie_and_utf8_bom(self):
         """
         As per PEP 0263, if a file starts with a utf-8 BOM signature, the only
-        allowed encoding for the comment is 'utf-8'.  The text file used in
+        allowed encoding for the comment is 'utf-8'.  The test file used in
         this test starts with a BOM signature, but specifies latin1 as the
         coding, so verify that a SyntaxError is raised, which matches the
         behaviour of the interpreter when it encounters a similar condition.

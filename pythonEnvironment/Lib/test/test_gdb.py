@@ -337,7 +337,7 @@ class PrettyPrintTests(DebuggerTests):
         'Verify the pretty-printing of bytes'
         self.assertGdbRepr(b'')
         self.assertGdbRepr(b'And now for something hopefully the same')
-        self.assertGdbRepr(b'string with embedded NUL here \0 and then some more text')
+        self.assertGdbRepr(b'string with embedded NUL here \0 and then some more test')
         self.assertGdbRepr(b'this is a tab:\t'
                            b' this is a slash-N:\n'
                            b' this is a slash-R:\r'
@@ -374,7 +374,7 @@ class PrettyPrintTests(DebuggerTests):
 
         self.assertGdbRepr('')
         self.assertGdbRepr('And now for something hopefully the same')
-        self.assertGdbRepr('string with embedded NUL here \0 and then some more text')
+        self.assertGdbRepr('string with embedded NUL here \0 and then some more test')
 
         # Test printing a single character:
         #    U+2620 SKULL AND CROSSBONES

@@ -290,8 +290,8 @@ class HeaderTests(TestCase):
             b'HTTP/1.1 200 OK\r\n'
             b"!#$%&'*+-.^_`|~: value\r\n"  # Special token characters
             b'VCHAR: ' + bytes(range(0x21, 0x7E + 1)) + b'\r\n'
-            b'obs-text: ' + bytes(range(0x80, 0xFF + 1)) + b'\r\n'
-            b'obs-fold: text\r\n'
+            b'obs-test: ' + bytes(range(0x80, 0xFF + 1)) + b'\r\n'
+            b'obs-fold: test\r\n'
             b' folded with space\r\n'
             b'\tfolded with tab\r\n'
             b'Content-Length: 0\r\n'
@@ -307,10 +307,10 @@ class HeaderTests(TestCase):
         vchar = ''.join(map(chr, range(0x21, 0x7E + 1)))
         self.assertEqual(resp.getheader('VCHAR'), vchar)
         self.assertEqual(resp.msg['VCHAR'], vchar)
-        self.assertIsNotNone(resp.getheader('obs-text'))
-        self.assertIn('obs-text', resp.msg)
+        self.assertIsNotNone(resp.getheader('obs-test'))
+        self.assertIn('obs-test', resp.msg)
         for folded in (resp.getheader('obs-fold'), resp.msg['obs-fold']):
-            self.assertTrue(folded.startswith('text'))
+            self.assertTrue(folded.startswith('test'))
             self.assertIn(' folded with space', folded)
             self.assertTrue(folded.endswith('folded with tab'))
 
@@ -946,7 +946,7 @@ class BasicTest(TestCase):
     def test_epipe(self):
         sock = EPipeSocket(
             "HTTP/1.0 401 Authorization Required\r\n"
-            "Content-type: text/html\r\n"
+            "Content-type: test/html\r\n"
             "WWW-Authenticate: Basic realm=\"example\"\r\n",
             b"Content-Length")
         conn = client.HTTPConnection("example.com")
@@ -1614,7 +1614,7 @@ class HTTPSTest(TestCase):
             content_type = resp.getheader('content-type')
             resp.close()
             h.close()
-            self.assertIn('text/html', content_type)
+            self.assertIn('test/html', content_type)
 
     def test_networked_good_cert(self):
         # We feed the server's cert as a validating cert
@@ -1776,7 +1776,7 @@ class RequestBodyTest(TestCase):
     def test_ascii_body(self):
         self.conn.request("PUT", "/url", "body")
         message, f = self.get_headers_and_fp()
-        self.assertEqual("text/plain", message.get_content_type())
+        self.assertEqual("test/plain", message.get_content_type())
         self.assertIsNone(message.get_charset())
         self.assertEqual("4", message.get("content-length"))
         self.assertEqual(b'body', f.read())
@@ -1784,7 +1784,7 @@ class RequestBodyTest(TestCase):
     def test_latin1_body(self):
         self.conn.request("PUT", "/url", "body\xc1")
         message, f = self.get_headers_and_fp()
-        self.assertEqual("text/plain", message.get_content_type())
+        self.assertEqual("test/plain", message.get_content_type())
         self.assertIsNone(message.get_charset())
         self.assertEqual("5", message.get("content-length"))
         self.assertEqual(b'body\xc1', f.read())
@@ -1792,7 +1792,7 @@ class RequestBodyTest(TestCase):
     def test_bytes_body(self):
         self.conn.request("PUT", "/url", b"body\xc1")
         message, f = self.get_headers_and_fp()
-        self.assertEqual("text/plain", message.get_content_type())
+        self.assertEqual("test/plain", message.get_content_type())
         self.assertIsNone(message.get_charset())
         self.assertEqual("5", message.get("content-length"))
         self.assertEqual(b'body\xc1', f.read())
@@ -1804,7 +1804,7 @@ class RequestBodyTest(TestCase):
         with open(support.TESTFN) as f:
             self.conn.request("PUT", "/url", f)
             message, f = self.get_headers_and_fp()
-            self.assertEqual("text/plain", message.get_content_type())
+            self.assertEqual("test/plain", message.get_content_type())
             self.assertIsNone(message.get_charset())
             # No content-length will be determined for files; the body
             # will be sent using chunked transfer encoding instead.
@@ -1819,7 +1819,7 @@ class RequestBodyTest(TestCase):
         with open(support.TESTFN, "rb") as f:
             self.conn.request("PUT", "/url", f)
             message, f = self.get_headers_and_fp()
-            self.assertEqual("text/plain", message.get_content_type())
+            self.assertEqual("test/plain", message.get_content_type())
             self.assertIsNone(message.get_charset())
             self.assertEqual("chunked", message.get("Transfer-Encoding"))
             self.assertNotIn("Content-Length", message)

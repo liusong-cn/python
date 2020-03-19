@@ -234,7 +234,7 @@ class CmdLineTest(unittest.TestCase):
                 % stream)
             rc, out, err = assert_python_ok('-u', '-c', code)
             data = err if stream == 'stderr' else out
-            self.assertEqual(data, b'x', "text %s not unbuffered" % stream)
+            self.assertEqual(data, b'x', "test %s not unbuffered" % stream)
 
     def test_unbuffered_input(self):
         # sys.stdin still works with '-u'
@@ -500,7 +500,7 @@ class CmdLineTest(unittest.TestCase):
 
     def test_sys_flags_set(self):
         # Issue 31845: a startup refactoring broke reading flags from env vars
-        for value, expected in (("", 0), ("1", 1), ("text", 1), ("2", 2)):
+        for value, expected in (("", 0), ("1", 1), ("test", 1), ("2", 2)):
             env_vars = dict(
                 PYTHONDEBUG=value,
                 PYTHONOPTIMIZE=value,

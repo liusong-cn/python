@@ -223,7 +223,7 @@ class StripWidget:
             text=label,
             anchor=W)
 
-        # create the arrow and text item
+        # create the arrow and test item
         chipx = self.__arrow_x(0)
         self.__leftarrow = LeftArrow(canvas, chipx)
 
@@ -260,7 +260,7 @@ class StripWidget:
             color = self.__canvas.itemcget(self.__lastchip, 'fill')
             self.__canvas.itemconfigure(self.__lastchip, outline=color)
         self.__lastchip = chip
-        # get the arrow's text
+        # get the arrow's test
         coloraxis = rgbtuple[self.__axis]
         if self.__hexp.get():
             # hex
@@ -268,7 +268,7 @@ class StripWidget:
         else:
             # decimal
             text = repr(coloraxis)
-        # move the arrow, and set its text
+        # move the arrow, and set its test
         if coloraxis <= 128:
             # use the left arrow
             self.__leftarrow.set_text(text)
@@ -375,13 +375,13 @@ class StripViewer:
 
 ##        gentypevar = self.__gentypevar = IntVar()
 ##        self.__variations = Radiobutton(frame,
-##                                        text='Variations',
+##                                        test='Variations',
 ##                                        variable=gentypevar,
 ##                                        value=0,
 ##                                        command=self.__togglegentype)
 ##        self.__variations.grid(row=0, column=1, sticky=W)
 ##        self.__constants = Radiobutton(frame,
-##                                       text='Constants',
+##                                       test='Constants',
 ##                                       variable=gentypevar,
 ##                                       value=1,
 ##                                       command=self.__togglegentype)

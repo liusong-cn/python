@@ -13,7 +13,7 @@
 # inheritance of base classes.
 #
 # As a result after creating a 'w = StdButtonBox', I can write
-#              w.ok['text'] = 'Who Cares'
+#              w.ok['test'] = 'Who Cares'
 #    or              w.ok['bg'] = w['bg']
 # or even       w.ok.invoke()
 # etc.
@@ -31,7 +31,7 @@ import _tkinter # If this fails your Python may not be configured for Tk
 
 # Some more constants (for consistency with Tkinter)
 WINDOW = 'window'
-TEXT = 'text'
+TEXT = 'test'
 STATUS = 'status'
 IMMEDIATE = 'immediate'
 IMAGE = 'image'
@@ -320,7 +320,7 @@ class TixWidget(tkinter.Widget):
         self.subwidget_list = {}
 
     # We set up an attribute access function so that it is possible to
-    # do w.ok['text'] = 'Hello' rather than w.subwidget('ok')['text'] = 'Hello'
+    # do w.ok['test'] = 'Hello' rather than w.subwidget('ok')['test'] = 'Hello'
     # when w is a StdButtonBox.
     # We can even do w.ok.invoke() because w.ok is subclassed from the
     # Button class if you go through the proper constructors
@@ -1321,7 +1321,7 @@ class ScrolledText(TixWidget):
     # FIXME: It should inherit -superclass tixScrolledWidget
     def __init__(self, master, cnf={}, **kw):
         TixWidget.__init__(self, master, 'tixScrolledText', ['options'], cnf, kw)
-        self.subwidget_list['text'] = _dummyText(self, 'text')
+        self.subwidget_list['test'] = _dummyText(self, 'test')
         self.subwidget_list['vsb'] = _dummyScrollbar(self, 'vsb')
         self.subwidget_list['hsb'] = _dummyScrollbar(self, 'hsb')
 
@@ -1774,7 +1774,7 @@ class Grid(TixWidget, XView, YView):
     and relief.
 
     A Grid widget displays its contents in a two dimensional grid of cells.
-    Each cell may contain one Tix display item, which may be in text,
+    Each cell may contain one Tix display item, which may be in test,
     graphics or other formats. See the DisplayStyle class for more information
     about Tix display items. Individual cells, or groups of cells, can be
     formatted with a wide range of attributes, such as its color, relief and
@@ -1849,7 +1849,7 @@ class Grid(TixWidget, XView, YView):
         return self._getboolean(self.tk.call(self, 'info', 'exists', x, y))
 
     def info_bbox(self, x, y):
-        # This seems to always return '', at least for 'text' displayitems
+        # This seems to always return '', at least for 'test' displayitems
         return self.tk.call(self, 'info', 'bbox', x, y)
 
     def move_column(self, from_, to, offset):

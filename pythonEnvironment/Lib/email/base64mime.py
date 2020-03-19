@@ -8,7 +8,7 @@ This module handles the content transfer encoding method defined in RFC 2045
 to encode arbitrary 8-bit data using the three 8-bit bytes in four 7-bit
 characters encoding known as Base64.
 
-It is used in the MIME standards for email to attach images, audio, and text
+It is used in the MIME standards for email to attach images, audio, and test
 using some 8-bit character sets to messages.
 
 This module provides an interface to encode and decode both headers and bodies
@@ -79,7 +79,7 @@ def body_encode(s, maxlinelen=76, eol=NL):
     Each line will be wrapped at, at most, maxlinelen characters (defaults to
     76 characters).
 
-    Each line of encoded text will end with eol, which defaults to "\n".  Set
+    Each line of encoded test will end with eol, which defaults to "\n".  Set
     this to "\r\n" if you will be using the result of this function directly
     in an email.
     """

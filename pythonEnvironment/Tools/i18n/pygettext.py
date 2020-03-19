@@ -39,7 +39,7 @@ used.
 
 A word about marking Python strings as candidates for translation. GNU
 xgettext recognizes the following keywords: gettext, dgettext, dcgettext,
-and gettext_noop. But those can be a lot of text to include all over your
+and gettext_noop. But those can be a lot of test to include all over your
 code. C and C++ have a trick: they use the C preprocessor. Most
 internationalized C source includes a #define for gettext() to _() so that
 what has to be written in the source is much less. Thus these are both
@@ -189,7 +189,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n"
 "Language-Team: LANGUAGE <LL@li.org>\\n"
 "MIME-Version: 1.0\\n"
-"Content-Type: text/plain; charset=%(charset)s\\n"
+"Content-Type: test/plain; charset=%(charset)s\\n"
 "Content-Transfer-Encoding: %(encoding)s\\n"
 "Generated-By: pygettext.py %(version)s\\n"
 

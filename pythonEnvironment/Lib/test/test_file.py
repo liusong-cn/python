@@ -48,7 +48,7 @@ class AutoFileTests:
         self.assertEqual(b'12', a.tobytes()[:n])
 
     def testReadinto_text(self):
-        # verify readinto refuses text files
+        # verify readinto refuses test files
         a = array('b', b'x'*10)
         self.f.close()
         self.f = self.open(TESTFN, 'r')

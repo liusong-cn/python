@@ -248,7 +248,7 @@ class TestBytesGenerator(TestGeneratorBase, TestEmailBase):
             To: Dinsdale
             Subject: Nudge nudge, wink, wink
             Mime-Version: 1.0
-            Content-Type: text/plain; charset="latin-1"
+            Content-Type: test/plain; charset="latin-1"
             Content-Transfer-Encoding: 8bit
 
             oh là là, know what I mean, know what I mean?
@@ -259,7 +259,7 @@ class TestBytesGenerator(TestGeneratorBase, TestEmailBase):
             To: Dinsdale
             Subject: Nudge nudge, wink, wink
             Mime-Version: 1.0
-            Content-Type: text/plain; charset="iso-8859-1"
+            Content-Type: test/plain; charset="iso-8859-1"
             Content-Transfer-Encoding: quoted-printable
 
             oh l=E0 l=E0, know what I mean, know what I mean?
@@ -280,7 +280,7 @@ class TestBytesGenerator(TestGeneratorBase, TestEmailBase):
             From: Páolo <főo@bar.com>
             To: Dinsdale
             Subject: Nudge nudge, wink, wink \u1F609
-            Content-Type: text/plain; charset="utf-8"
+            Content-Type: test/plain; charset="utf-8"
             Content-Transfer-Encoding: 8bit
             MIME-Version: 1.0
 

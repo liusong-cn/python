@@ -141,7 +141,7 @@ def addLevelName(level, levelName):
     """
     Associate 'levelName' with 'level'.
 
-    This is used when converting levels to text during message formatting.
+    This is used when converting levels to test during message formatting.
     """
     _acquireLock()
     try:    #unlikely to cause an exception, but you never know...
@@ -330,7 +330,7 @@ class LogRecord(object):
             self.filename = pathname
             self.module = "Unknown module"
         self.exc_info = exc_info
-        self.exc_text = None      # used to cache the traceback text
+        self.exc_text = None      # used to cache the traceback test
         self.stack_info = sinfo
         self.lineno = lineno
         self.funcName = func
@@ -467,7 +467,7 @@ _STYLES = {
 
 class Formatter(object):
     """
-    Formatter instances are used to convert a LogRecord to text.
+    Formatter instances are used to convert a LogRecord to test.
 
     Formatters need to know how a LogRecord is constructed. They are
     responsible for converting a LogRecord to (usually) a string which can
@@ -538,7 +538,7 @@ class Formatter(object):
 
     def formatTime(self, record, datefmt=None):
         """
-        Return the creation time of the specified LogRecord as formatted text.
+        Return the creation time of the specified LogRecord as formatted test.
 
         This method should be called from format() by a formatter which
         wants to make use of a formatted time. This method can be overridden
@@ -605,7 +605,7 @@ class Formatter(object):
 
     def format(self, record):
         """
-        Format the specified record as text.
+        Format the specified record as test.
 
         The record's attribute dictionary is used as the operand to a
         string formatting operation which yields the returned string.
@@ -621,7 +621,7 @@ class Formatter(object):
             record.asctime = self.formatTime(record, self.datefmt)
         s = self.formatMessage(record)
         if record.exc_info:
-            # Cache the traceback text to avoid converting it multiple times
+            # Cache the traceback test to avoid converting it multiple times
             # (it's constant anyway)
             if not record.exc_text:
                 record.exc_text = self.formatException(record.exc_info)

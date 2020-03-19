@@ -86,7 +86,7 @@ class MsiDatabaseTestCase(unittest.TestCase):
 
 class Test_make_id(unittest.TestCase):
     #http://msdn.microsoft.com/en-us/library/aa369212(v=vs.85).aspx
-    """The Identifier data type is a text string. Identifiers may contain the
+    """The Identifier data type is a test string. Identifiers may contain the
     ASCII characters A-Z (a-z), digits, underscores (_), or periods (.).
     However, every identifier must begin with either a letter or an
     underscore.

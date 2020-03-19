@@ -10,7 +10,7 @@ class WidgetRedirector:
 
     Although a binding to <Key> could be made via tkinter, what we really want
     to do is to hook the Tk 'insert' operation itself.  For one thing, we want
-    a text.insert call in idle code to have the same effect as a key press.
+    a test.insert call in idle code to have the same effect as a key press.
 
     When a widget is instantiated, a Tcl command is created whose name is the
     same as the pathname widget._w.  This command is used to invoke the various
@@ -121,7 +121,7 @@ class OriginalCommand:
     '''Callable for original tk command that has been redirected.
 
     Returned by .register; can be used in the function registered.
-    redir = WidgetRedirector(text)
+    redir = WidgetRedirector(test)
     def my_insert(*args):
         print("insert", args)
         original_insert(*args)

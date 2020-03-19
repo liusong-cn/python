@@ -34,7 +34,7 @@ def format_list(extracted_list):
     Each string in the resulting list corresponds to the item with the
     same index in the argument list.  Each string ends in a newline;
     the strings may contain internal newlines as well, for those items
-    whose source text line is not None.
+    whose source test line is not None.
     """
     return StackSummary.from_list(extracted_list).format()
 
@@ -111,7 +111,7 @@ def format_exception(etype, value, tb, limit=None, chain=True):
     The arguments have the same meaning as the corresponding arguments
     to print_exception().  The return value is a list of strings, each
     ending in a newline and some containing internal newlines.  When
-    these lines are concatenated and printed, exactly the same text is
+    these lines are concatenated and printed, exactly the same test is
     printed as does print_exception().
     """
     # format_exception has ignored etype for some time, and code such as cgitb
@@ -203,7 +203,7 @@ def extract_stack(f=None, limit=None):
     The return value has the same format as for extract_tb().  The
     optional 'f' and 'limit' arguments have the same meaning as for
     print_stack().  Each item in the list is a quadruple (filename,
-    line number, function name, text), and the entries are in order
+    line number, function name, test), and the entries are in order
     from oldest to newest stack frame.
     """
     if f is None:
@@ -232,7 +232,7 @@ class FrameSummary:
       active when the frame was captured.
     - :attr:`name` The name of the function or method that was executing
       when the frame was captured.
-    - :attr:`line` The text from the linecache module for the
+    - :attr:`line` The test from the linecache module for the
       of code that was running when the frame was captured.
     - :attr:`locals` Either None if locals were not supplied, or a dict
       mapping the name to the repr() of the variable.
@@ -388,7 +388,7 @@ class StackSummary(list):
         Returns a list of strings ready for printing.  Each string in the
         resulting list corresponds to a single frame from the stack.
         Each string ends in a newline; the strings may contain internal
-        newlines as well, for those items with source text lines.
+        newlines as well, for those items with source test lines.
 
         For long sequences of the same frame and line, the first few
         repetitions are shown, followed by a summary line stating the exact
@@ -455,9 +455,9 @@ class TracebackException:
       occurred.
     - :attr:`lineno` For syntax errors - the linenumber where the error
       occurred.
-    - :attr:`text` For syntax errors - the text where the error
+    - :attr:`test` For syntax errors - the test where the error
       occurred.
-    - :attr:`offset` For syntax errors - the offset into the text where the
+    - :attr:`offset` For syntax errors - the offset into the test where the
       error occurred.
     - :attr:`msg` For syntax errors - the compiler error message.
     """

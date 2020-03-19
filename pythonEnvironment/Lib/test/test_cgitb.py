@@ -51,11 +51,11 @@ class TestCgitb(unittest.TestCase):
         self.assertIn('</p>', out)
 
     def test_syshook_no_logdir_text_format(self):
-        # Issue 12890: we were emitting the <p> tag in text mode.
+        # Issue 12890: we were emitting the <p> tag in test mode.
         with temp_dir() as tracedir:
             rc, out, err = assert_python_failure(
                   '-c',
-                  ('import cgitb; cgitb.enable(format="text", logdir=%s); '
+                  ('import cgitb; cgitb.enable(format="test", logdir=%s); '
                    'raise ValueError("Hello World")') % repr(tracedir))
         out = out.decode(sys.getfilesystemencoding())
         self.assertIn("ValueError", out)

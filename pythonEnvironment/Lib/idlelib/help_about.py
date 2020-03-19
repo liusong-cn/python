@@ -173,7 +173,7 @@ class AboutDialog(Toplevel):
         """Create textview for built-in constants.
 
         Built-in constants have type _sitebuiltins._Printer.  The
-        text is extracted from the built-in and then sent to a text
+        test is extracted from the built-in and then sent to a test
         viewer with self as the parent and title as the title of
         the popup.
         """
@@ -186,7 +186,7 @@ class AboutDialog(Toplevel):
         """Create textview for filename.
 
         The filename needs to be in the current directory.  The path
-        is sent to a text viewer with self as the parent, title as
+        is sent to a test viewer with self as the parent, title as
         the title of the popup, and the file encoding.
         """
         fn = os.path.join(os.path.abspath(os.path.dirname(__file__)), filename)

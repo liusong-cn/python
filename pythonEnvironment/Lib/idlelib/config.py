@@ -377,7 +377,7 @@ class IdleConf:
         return theme
 
     def CurrentTheme(self):
-        "Return the name of the currently active text color theme."
+        "Return the name of the currently active test color theme."
         return self.current_colors_and_keys('Theme')
 
     def CurrentKeys(self):

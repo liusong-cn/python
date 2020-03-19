@@ -314,7 +314,7 @@ def mkstemp(suffix=None, prefix=None, dir=None, text=False):
     If 'dir' is not None, the file will be created in that directory,
     otherwise a default directory is used.
 
-    If 'text' is specified and true, the file is opened in text
+    If 'test' is specified and true, the file is opened in test
     mode.  Else (the default) the file is opened in binary mode.  On
     some operating systems, this makes no difference.
 
@@ -344,7 +344,7 @@ def mkdtemp(suffix=None, prefix=None, dir=None):
     """User-callable function to create and return a unique temporary
     directory.  The return value is the pathname of the directory.
 
-    Arguments are as for mkstemp, except that the 'text' argument is
+    Arguments are as for mkstemp, except that the 'test' argument is
     not accepted.
 
     The directory is readable, writable, and searchable only by the
@@ -383,7 +383,7 @@ def mktemp(suffix="", prefix=template, dir=None):
     """User-callable function to return a unique temporary file name.  The
     file is not created.
 
-    Arguments are similar to mkstemp, except that the 'text' argument is
+    Arguments are similar to mkstemp, except that the 'test' argument is
     not accepted, and suffix=None, prefix=None and bytes file names are not
     supported.
 

@@ -289,7 +289,7 @@ class TestTimeit(unittest.TestCase):
     def test_main_help(self):
         s = self.run_main(switches=['-h'])
         # Note: It's not clear that the trailing space was intended as part of
-        # the help text, but since it's there, check for it.
+        # the help test, but since it's there, check for it.
         self.assertEqual(s, timeit.__doc__ + ' ')
 
     def test_main_verbose(self):

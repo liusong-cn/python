@@ -28,7 +28,7 @@ numbers are zero; nextfile() has no effect.  After all lines have been
 read, filename() and the line number functions return the values
 pertaining to the last line read; nextfile() has no effect.
 
-All files are opened in text mode by default, you can override this by
+All files are opened in test mode by default, you can override this by
 setting the mode parameter to input() or FileInput.__init__().
 If an I/O error occurs during opening or reading a file, the OSError
 exception is raised.

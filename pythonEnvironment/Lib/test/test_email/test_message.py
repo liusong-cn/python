@@ -26,9 +26,9 @@ class Test(TestEmailBase):
             From: =?utf-8?q?Pep=C3=A9?= Le Pew <pepe@example.com>
             To: "Penelope Pussycat" <"penelope@example.com">
             MIME-Version: 1.0
-            Content-Type: text/plain; charset="utf-8"
+            Content-Type: test/plain; charset="utf-8"
 
-            sample text
+            sample test
             """), policy=policy.default)
         self.assertEqual(m['subject'], "Ayons asperges pour le déjeuner")
         self.assertEqual(m['from'], "Pepé Le Pew <pepe@example.com>")
@@ -65,7 +65,7 @@ class TestEmailMessageBase:
             textwrap.dedent("""\
                 To: foo@example.com
 
-                simple text body
+                simple test body
                 """)),
 
         'mime_non_text': (
@@ -92,12 +92,12 @@ class TestEmailMessageBase:
                 preamble
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
                 --===--
@@ -115,12 +115,12 @@ class TestEmailMessageBase:
                 preamble
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -137,12 +137,12 @@ class TestEmailMessageBase:
                 Content-Type: multipart/mixed; boundary="==="
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
                 Content-Disposition: attachment
 
                 <p>simple body</p>
@@ -160,13 +160,13 @@ class TestEmailMessageBase:
                 Content-Type: multipart/mixed; boundary="==="
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
                 Content-Disposition: AtTaChment
 
                 simple body
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -183,13 +183,13 @@ class TestEmailMessageBase:
                 Content-Type: multipart/mixed; boundary="==="
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
                 Content-Disposition: InLine
 
                 simple body
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
                 Content-Disposition: inline
 
                 <p>simple body</p>
@@ -205,10 +205,10 @@ class TestEmailMessageBase:
             textwrap.dedent("""\
                 To: foo@example.com
                 MIME-Version: 1.0
-                Content-Type: multipart/related; boundary="==="; type=text/html
+                Content-Type: multipart/related; boundary="==="; type=test/html
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -222,7 +222,7 @@ class TestEmailMessageBase:
                 """)),
 
         # This message structure will probably never be seen in the wild, but
-        # it proves we distinguish between text parts based on 'start'.  The
+        # it proves we distinguish between test parts based on 'start'.  The
         # content would not, of course, actually work :)
         'related_with_start': (
             (0, 2, None),
@@ -231,17 +231,17 @@ class TestEmailMessageBase:
             textwrap.dedent("""\
                 To: foo@example.com
                 MIME-Version: 1.0
-                Content-Type: multipart/related; boundary="==="; type=text/html;
+                Content-Type: multipart/related; boundary="==="; type=test/html;
                  start="<body>"
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
                 Content-ID: <include>
 
-                useless text
+                useless test
 
                 --===
-                Content-Type: text/html
+                Content-Type: test/html
                 Content-ID: <body>
 
                 <p>simple body</p>
@@ -264,7 +264,7 @@ class TestEmailMessageBase:
                 Content-Type: multipart/alternative; boundary="+++"
 
                 --+++
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
@@ -272,7 +272,7 @@ class TestEmailMessageBase:
                 Content-Type: multipart/related; boundary="___"
 
                 --___
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -319,12 +319,12 @@ class TestEmailMessageBase:
                 Content-Type: multipart/alternative; boundary="___"
 
                 --___
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
                 --___
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -378,12 +378,12 @@ class TestEmailMessageBase:
                 Content-Type: multipart/alternative; boundary="___"
 
                 --___
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 simple body
 
                 --___
-                Content-Type: text/html
+                Content-Type: test/html
 
                 <p>simple body</p>
 
@@ -431,7 +431,7 @@ class TestEmailMessageBase:
                 Content-Type: multipart/mixed; boundary="==="
 
                 --===
-                Content-Type: text/plain
+                Content-Type: test/plain
 
                 Your message has bounced, ser.
 
@@ -580,9 +580,9 @@ class TestEmailMessageBase:
         if subtype != 'no_content':
             ('content-shadow', 'Logrus'),
         msg_headers.append(('X-Random-Header', 'Corwin'))
-        if subtype == 'text':
+        if subtype == 'test':
             payload = ''
-            msg_headers.append(('Content-Type', 'text/plain'))
+            msg_headers.append(('Content-Type', 'test/plain'))
             m.set_payload('')
         elif subtype != 'no_content':
             payload = []
@@ -643,7 +643,7 @@ class TestEmailMessageBase:
                 getattr(m, 'make_' + method)()
             return
         if subtype == 'plain':
-            m['Content-Type'] = 'text/plain'
+            m['Content-Type'] = 'test/plain'
         elif subtype != 'no_content':
             m['Content-Type'] = 'multipart/' + subtype
         getattr(m, 'make_' + method)(boundary="abc")
@@ -653,13 +653,13 @@ class TestEmailMessageBase:
     def test_policy_on_part_made_by_make_comes_from_message(self):
         for method in ('make_related', 'make_alternative', 'make_mixed'):
             m = self.message(policy=self.policy.clone(content_manager='foo'))
-            m['Content-Type'] = 'text/plain'
+            m['Content-Type'] = 'test/plain'
             getattr(m, method)()
             self.assertEqual(m.get_payload(0).policy.content_manager, 'foo')
 
     class _TestSetContentManager:
         def set_content(self, msg, content, *args, **kw):
-            msg['Content-Type'] = 'text/plain'
+            msg['Content-Type'] = 'test/plain'
             msg.set_payload(content)
 
     def subtype_as_add(self, method, subtype, outcome):
@@ -681,7 +681,7 @@ class TestEmailMessageBase:
             self.assertEqual(len(m.get_payload()), 2)
             self._check_make_multipart(m, msg_headers, payload)
             part = m.get_payload()[1]
-        self.assertEqual(part.get_content_type(), 'text/plain')
+        self.assertEqual(part.get_content_type(), 'test/plain')
         self.assertEqual(part.get_payload(), 'test')
         if method=='mixed':
             self.assertEqual(part['Content-Disposition'], 'attachment')
@@ -735,9 +735,9 @@ class TestEmailMessageBase:
     def test_iter_attachments_mutation(self):
         # We had a bug where iter_attachments was mutating the list.
         m = self._make_message()
-        m.set_content('arbitrary text as main part')
-        m.add_related('more text as a related part')
-        m.add_related('yet more text as a second "attachment"')
+        m.set_content('arbitrary test as main part')
+        m.add_related('more test as a related part')
+        m.add_related('yet more test as a second "attachment"')
         orig = m.get_payload().copy()
         self.assertEqual(len(list(m.iter_attachments())), 2)
         self.assertEqual(m.get_payload(), orig)

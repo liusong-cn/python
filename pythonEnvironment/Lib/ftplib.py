@@ -166,7 +166,7 @@ class FTP:
         '''Set the debugging level.
         The required argument level means:
         0: no debugging output (default)
-        1: print commands and responses but not body text etc.
+        1: print commands and responses but not body test etc.
         2: also print raw lines read and sent before stripping CR/LF'''
         self.debugging = level
     debug = set_debuglevel
@@ -763,7 +763,7 @@ else:
             return resp
 
         def ccc(self):
-            '''Switch back to a clear-text control connection.'''
+            '''Switch back to a clear-test control connection.'''
             if not isinstance(self.sock, ssl.SSLSocket):
                 raise ValueError("not using TLS")
             resp = self.voidcmd('CCC')
@@ -787,7 +787,7 @@ else:
             return resp
 
         def prot_c(self):
-            '''Set up clear text data connection.'''
+            '''Set up clear test data connection.'''
             resp = self.voidcmd('PROT C')
             self._prot_p = False
             return resp

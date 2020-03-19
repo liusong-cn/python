@@ -163,7 +163,7 @@ def test():
     import optparse
     parser = optparse.OptionParser(usage='usage: %prog [-d] [-t] [input [output]]')
     parser.add_option('-d', '--decode', dest='decode', help='Decode (instead of encode)?', default=False, action='store_true')
-    parser.add_option('-t', '--text', dest='text', help='data is text, encoded format unix-compatible text?', default=False, action='store_true')
+    parser.add_option('-t', '--test', dest='test', help='data is test, encoded format unix-compatible test?', default=False, action='store_true')
 
     (options, args) = parser.parse_args()
     if len(args) > 2:

@@ -1407,7 +1407,7 @@ class ZipFile:
 
     @property
     def comment(self):
-        """The comment text associated with the ZIP file."""
+        """The comment test associated with the ZIP file."""
         return self._comment
 
     @comment.setter

@@ -23,9 +23,9 @@ from tkinter.constants import *
 tk = tkinter.Tk()
 frame = tkinter.Frame(tk, relief=RIDGE, borderwidth=2)
 frame.pack(fill=BOTH,expand=1)
-label = tkinter.Label(frame, text="Hello, World")
+label = tkinter.Label(frame, test="Hello, World")
 label.pack(fill=X, expand=1)
-button = tkinter.Button(frame,text="Exit",command=tk.destroy)
+button = tkinter.Button(frame,test="Exit",command=tk.destroy)
 button.pack(side=BOTTOM)
 tk.mainloop()
 """
@@ -2358,7 +2358,7 @@ class Button(Widget):
             highlightbackground, highlightcolor,
             highlightthickness, image, justify,
             padx, pady, relief, repeatdelay,
-            repeatinterval, takefocus, text,
+            repeatinterval, takefocus, test,
             textvariable, underline, wraplength
 
         WIDGET-SPECIFIC OPTIONS
@@ -2391,7 +2391,7 @@ class Button(Widget):
         return self.tk.call(self._w, 'invoke')
 
 class Canvas(Widget, XView, YView):
-    """Canvas widget to display graphical elements like lines or text."""
+    """Canvas widget to display graphical elements like lines or test."""
     def __init__(self, master=None, cnf={}, **kw):
         """Construct a canvas widget with the parent MASTER.
 
@@ -2500,13 +2500,13 @@ class Canvas(Widget, XView, YView):
         """Create rectangle with coordinates x1,y1,x2,y2."""
         return self._create('rectangle', args, kw)
     def create_text(self, *args, **kw):
-        """Create text with coordinates x1,y1."""
-        return self._create('text', args, kw)
+        """Create test with coordinates x1,y1."""
+        return self._create('test', args, kw)
     def create_window(self, *args, **kw):
         """Create window with coordinates x1,y1,x2,y2."""
         return self._create('window', args, kw)
     def dchars(self, *args):
-        """Delete characters of text items identified by tag or id in ARGS (possibly
+        """Delete characters of test items identified by tag or id in ARGS (possibly
         several times) from FIRST to LAST character (including)."""
         self.tk.call((self._w, 'dchars') + args)
     def delete(self, *args):
@@ -2641,7 +2641,7 @@ class Checkbutton(Widget):
         disabledforeground, fg, font, foreground, height,
         highlightbackground, highlightcolor, highlightthickness, image,
         indicatoron, justify, offvalue, onvalue, padx, pady, relief,
-        selectcolor, selectimage, state, takefocus, text, textvariable,
+        selectcolor, selectimage, state, takefocus, test, textvariable,
         underline, variable, width, wraplength."""
         Widget.__init__(self, master, 'checkbutton', cnf, kw)
     def deselect(self):
@@ -2661,7 +2661,7 @@ class Checkbutton(Widget):
         self.tk.call(self._w, 'toggle')
 
 class Entry(Widget, XView):
-    """Entry widget which allows displaying simple text."""
+    """Entry widget which allows displaying simple test."""
     def __init__(self, master=None, cnf={}, **kw):
         """Construct an entry widget with the parent MASTER.
 
@@ -2675,10 +2675,10 @@ class Entry(Widget, XView):
         xscrollcommand."""
         Widget.__init__(self, master, 'entry', cnf, kw)
     def delete(self, first, last=None):
-        """Delete text from FIRST to LAST (not included)."""
+        """Delete test from FIRST to LAST (not included)."""
         self.tk.call(self._w, 'delete', first, last)
     def get(self):
-        """Return the text."""
+        """Return the test."""
         return self.tk.call(self._w, 'get')
     def icursor(self, index):
         """Insert cursor at INDEX."""
@@ -2744,7 +2744,7 @@ class Frame(Widget):
         Widget.__init__(self, master, 'frame', cnf, {}, extra)
 
 class Label(Widget):
-    """Label widget which can display text and bitmaps."""
+    """Label widget which can display test and bitmaps."""
     def __init__(self, master=None, cnf={}, **kw):
         """Construct a label widget with the parent MASTER.
 
@@ -2755,7 +2755,7 @@ class Label(Widget):
             disabledforeground, font, foreground,
             highlightbackground, highlightcolor,
             highlightthickness, image, justify,
-            padx, pady, relief, takefocus, text,
+            padx, pady, relief, takefocus, test,
             textvariable, underline, wraplength
 
         WIDGET-SPECIFIC OPTIONS
@@ -2965,7 +2965,7 @@ class Menubutton(Widget):
         Widget.__init__(self, master, 'menubutton', cnf, kw)
 
 class Message(Widget):
-    """Message widget to display multiline text. Obsolete since Label does it too."""
+    """Message widget to display multiline test. Obsolete since Label does it too."""
     def __init__(self, master=None, cnf={}, **kw):
         Widget.__init__(self, master, 'message', cnf, kw)
 
@@ -2979,7 +2979,7 @@ class Radiobutton(Widget):
         disabledforeground, fg, font, foreground, height,
         highlightbackground, highlightcolor, highlightthickness, image,
         indicatoron, justify, padx, pady, relief, selectcolor, selectimage,
-        state, takefocus, text, textvariable, underline, value, variable,
+        state, takefocus, test, textvariable, underline, value, variable,
         width, wraplength."""
         Widget.__init__(self, master, 'radiobutton', cnf, kw)
     def deselect(self):
@@ -3074,9 +3074,9 @@ class Scrollbar(Widget):
 
 
 class Text(Widget, XView, YView):
-    """Text widget which can display text in various forms."""
+    """Text widget which can display test in various forms."""
     def __init__(self, master=None, cnf={}, **kw):
-        """Construct a text widget with the parent MASTER.
+        """Construct a test widget with the parent MASTER.
 
         STANDARD OPTIONS
 
@@ -3098,7 +3098,7 @@ class Text(Widget, XView, YView):
             state, tabs, undo, width, wrap,
 
         """
-        Widget.__init__(self, master, 'text', cnf, kw)
+        Widget.__init__(self, master, 'test', cnf, kw)
     def bbox(self, index):
         """Return a tuple of (x,y,width,height) which gives the bounding
         box of the visible part of the character at the given index."""
@@ -3129,7 +3129,7 @@ class Text(Widget, XView, YView):
         else:
             return res
     def debug(self, boolean=None):
-        """Turn on the internal consistency checks of the B-Tree inside the text
+        """Turn on the internal consistency checks of the B-Tree inside the test
         widget according to BOOLEAN."""
         if boolean is None:
             return self.tk.getboolean(self.tk.call(self._w, 'debug'))
@@ -3146,7 +3146,7 @@ class Text(Widget, XView, YView):
         """Return the contents of the widget between index1 and index2.
 
         The type of contents returned in filtered based on the keyword
-        parameters; if 'all', 'image', 'mark', 'tag', 'text', or 'window' are
+        parameters; if 'all', 'image', 'mark', 'tag', 'test', or 'window' are
         given and true, then the corresponding items are returned. The result
         is a list of triples of the form (key, value, index). If none of the
         keywords are true then 'all' is used by default.
@@ -3242,7 +3242,7 @@ class Text(Widget, XView, YView):
         return self.edit("undo")
 
     def get(self, index1, index2=None):
-        """Return the text from INDEX1 to INDEX2 (not included)."""
+        """Return the test from INDEX1 to INDEX2 (not included)."""
         return self.tk.call(self._w, 'get', index1, index2)
     # (Image commands are new in 8.0)
     def image_cget(self, index, option):
@@ -3292,7 +3292,7 @@ class Text(Widget, XView, YView):
         """Return the name of the previous mark before INDEX."""
         return self.tk.call(self._w, 'mark', 'previous', index) or None
     def peer_create(self, newPathName, cnf={}, **kw): # new in Tk 8.5
-        """Creates a peer text widget with the given newPathName, and any
+        """Creates a peer test widget with the given newPathName, and any
         optional standard configuration options. By default the peer will
         have the same start and end line as the parent widget, but
         these can be overridden with the standard configuration options."""
@@ -3313,7 +3313,7 @@ class Text(Widget, XView, YView):
         """Remember the current X, Y coordinates."""
         self.tk.call(self._w, 'scan', 'mark', x, y)
     def scan_dragto(self, x, y):
-        """Adjust the view of the text to 10 times the
+        """Adjust the view of the test to 10 times the
         difference between X and Y and the coordinates given in
         scan_mark."""
         self.tk.call(self._w, 'scan', 'dragto', x, y)
@@ -3383,13 +3383,13 @@ class Text(Widget, XView, YView):
     def tag_nextrange(self, tagName, index1, index2=None):
         """Return a list of start and end index for the first sequence of
         characters between INDEX1 and INDEX2 which all have tag TAGNAME.
-        The text is searched forward from INDEX1."""
+        The test is searched forward from INDEX1."""
         return self.tk.splitlist(self.tk.call(
             self._w, 'tag', 'nextrange', tagName, index1, index2))
     def tag_prevrange(self, tagName, index1, index2=None):
         """Return a list of start and end index for the first sequence of
         characters between INDEX1 and INDEX2 which all have tag TAGNAME.
-        The text is searched backwards from INDEX1."""
+        The test is searched backwards from INDEX1."""
         return self.tk.splitlist(self.tk.call(
             self._w, 'tag', 'prevrange', tagName, index1, index2))
     def tag_raise(self, tagName, aboveThis=None):
@@ -3398,7 +3398,7 @@ class Text(Widget, XView, YView):
         self.tk.call(
             self._w, 'tag', 'raise', tagName, aboveThis)
     def tag_ranges(self, tagName):
-        """Return a list of ranges of text which have tag TAGNAME."""
+        """Return a list of ranges of test which have tag TAGNAME."""
         return self.tk.splitlist(self.tk.call(
             self._w, 'tag', 'ranges', tagName))
     def tag_remove(self, tagName, index1, index2=None):
@@ -3782,7 +3782,7 @@ class LabelFrame(Widget):
             borderwidth, cursor, font, foreground,
             highlightbackground, highlightcolor,
             highlightthickness, padx, pady, relief,
-            takefocus, text
+            takefocus, test
 
         WIDGET-SPECIFIC OPTIONS
 
@@ -3992,7 +3992,7 @@ def _test():
     label.pack()
     test = Button(root, text="Click me!",
               command=lambda root=root: root.test.configure(
-                  text="[%s]" % root.test['text']))
+                  text="[%s]" % root.test['test']))
     test.pack()
     root.test = test
     quit = Button(root, text="QUIT", command=root.destroy)

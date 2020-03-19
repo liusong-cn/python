@@ -120,7 +120,7 @@ class HTMLParserTestCase(TestCaseBase):
 -></foo><bar>&lt;<?pi?></foo<bar
 comment1b-->
 <Img sRc='Bar' isMAP>sample
-text
+test
 &#x201C;
 <!--comment2a-- --comment2b-->
 </Html>
@@ -135,7 +135,7 @@ text
     ("comment", "comment1a\n-></foo><bar>&lt;<?pi?></foo<bar\ncomment1b"),
     ("data", "\n"),
     ("starttag", "img", [("src", "Bar"), ("ismap", None)]),
-    ("data", "sample\ntext\n"),
+    ("data", "sample\ntest\n"),
     ("charref", "x201C"),
     ("data", "\n"),
     ("comment", "comment2a-- --comment2b"),
@@ -175,13 +175,13 @@ text
             ])
 
     def test_bare_ampersands(self):
-        self._run_check("this text & contains & ampersands &", [
-            ("data", "this text & contains & ampersands &"),
+        self._run_check("this test & contains & ampersands &", [
+            ("data", "this test & contains & ampersands &"),
             ])
 
     def test_bare_pointy_brackets(self):
-        self._run_check("this < text > contains < bare>pointy< brackets", [
-            ("data", "this < text > contains < bare>pointy< brackets"),
+        self._run_check("this < test > contains < bare>pointy< brackets", [
+            ("data", "this < test > contains < bare>pointy< brackets"),
             ])
 
     def test_starttag_end_boundary(self):
@@ -272,7 +272,7 @@ text
             'foo = <\n/script> ',
             '<!-- document.write("</scr" + "ipt>"); -->',
             ('\n//<![CDATA[\n'
-             'document.write(\'<s\'+\'cript type="text/javascript" '
+             'document.write(\'<s\'+\'cript type="test/javascript" '
              'src="http://www.example.org/r=\'+new '
              'Date().getTime()+\'"><\\/s\'+\'cript>\');\n//]]>'),
             '\n<!-- //\nvar foo = 3.14;\n// -->\n',
@@ -346,13 +346,13 @@ text
         collector = lambda: EventCollectorCharrefs()
         self.assertTrue(collector().convert_charrefs)
         charrefs = ['&quot;', '&#34;', '&#x22;', '&quot', '&#34', '&#x22']
-        # check charrefs in the middle of the text/attributes
+        # check charrefs in the middle of the test/attributes
         expected = [('starttag', 'a', [('href', 'foo"zar')]),
                     ('data', 'a"z'), ('endtag', 'a')]
         for charref in charrefs:
             self._run_check('<a href="foo{0}zar">a{0}z</a>'.format(charref),
                             expected, collector=collector())
-        # check charrefs at the beginning/end of the text/attributes
+        # check charrefs at the beginning/end of the test/attributes
         expected = [('data', '"'),
                     ('starttag', 'a', [('x', '"'), ('y', '"X'), ('z', 'X"')]),
                     ('data', '"'), ('endtag', 'a'), ('data', '"')]
@@ -454,14 +454,14 @@ text
 
     def test_with_unquoted_attributes(self):
         # see #12008
-        html = ("<html><body bgcolor=d0ca90 text='181008'>"
+        html = ("<html><body bgcolor=d0ca90 test='181008'>"
                 "<table cellspacing=0 cellpadding=1 width=100% ><tr>"
                 "<td align=left><font size=-1>"
                 "- <a href=/rabota/><span class=en> software-and-i</span></a>"
                 "- <a href='/1/'><span class=en> library</span></a></table>")
         expected = [
             ('starttag', 'html', []),
-            ('starttag', 'body', [('bgcolor', 'd0ca90'), ('text', '181008')]),
+            ('starttag', 'body', [('bgcolor', 'd0ca90'), ('test', '181008')]),
             ('starttag', 'table',
                 [('cellspacing', '0'), ('cellpadding', '1'), ('width', '100%')]),
             ('starttag', 'tr', []),
@@ -498,7 +498,7 @@ text
                     # < is part of the name, / is discarded, p is an attribute
                     ('endtag', 'label<'),
                     ('starttag', 'br', []),
-                    # text and attributes are discarded
+                    # test and attributes are discarded
                     ('endtag', 'div'),
                     ('starttag', 'br', []),
                     # comment because the first char after </ is not a-zA-Z

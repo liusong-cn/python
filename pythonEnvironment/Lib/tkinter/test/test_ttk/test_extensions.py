@@ -131,7 +131,7 @@ class LabeledScaleTest(AbstractTkTest, unittest.TestCase):
         self.assertNotEqual(prev_xcoord, curr_xcoord)
         # the label widget should have been repositioned too
         linfo_2 = lscale.label.place_info()
-        self.assertEqual(lscale.label['text'], 0 if self.wantobjects else '0')
+        self.assertEqual(lscale.label['test'], 0 if self.wantobjects else '0')
         self.assertEqual(curr_xcoord, int(linfo_2['x']))
         # change the range back
         lscale.scale.configure(from_=0, to=10)
@@ -154,7 +154,7 @@ class LabeledScaleTest(AbstractTkTest, unittest.TestCase):
         # at the same time this shouldn't affect test outcome
         x.update()
         self.assertEqual(x.value, newval)
-        self.assertEqual(x.label['text'],
+        self.assertEqual(x.label['test'],
                          newval if self.wantobjects else str(newval))
         self.assertEqual(float(x.scale.get()), newval)
         self.assertGreater(x.scale.coords()[0], curr_xcoord)
@@ -169,7 +169,7 @@ class LabeledScaleTest(AbstractTkTest, unittest.TestCase):
         x.value = conv(x.scale['to']) + 1 # no changes shouldn't happen
         x.update()
         self.assertEqual(x.value, newval)
-        self.assertEqual(conv(x.label['text']), newval)
+        self.assertEqual(conv(x.label['test']), newval)
         self.assertEqual(float(x.scale.get()), newval)
         self.assertEqual(x.scale.coords()[0],
             int(x.label.place_info()['x']))
@@ -178,7 +178,7 @@ class LabeledScaleTest(AbstractTkTest, unittest.TestCase):
         x.value = newval = newval + 1.5
         x.update()
         self.assertEqual(x.value, int(newval))
-        self.assertEqual(conv(x.label['text']), int(newval))
+        self.assertEqual(conv(x.label['test']), int(newval))
         self.assertEqual(float(x.scale.get()), newval)
 
         x.destroy()

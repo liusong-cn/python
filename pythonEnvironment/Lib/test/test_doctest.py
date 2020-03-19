@@ -291,7 +291,7 @@ constructor:
     ...     >>> print(12)
     ...     12
     ...
-    ... Non-example text.
+    ... Non-example test.
     ...
     ...     >>> print('another\\example')
     ...     another
@@ -633,7 +633,7 @@ DocTestFinder finds the line number of each example:
     ...     '''
     ...     >>> x = 12
     ...
-    ...     some text
+    ...     some test
     ...
     ...     >>> # examples are not created for comments & bare prompts.
     ...     >>>
@@ -706,7 +706,7 @@ Unit tests for the `DocTestParser` class.
 DocTestParser is used to parse docstrings containing doctest examples.
 
 The `parse` method divides a docstring into examples and intervening
-text:
+test:
 
     >>> s = '''
     ...     >>> x, y = 2, 3  # no output expected
@@ -716,7 +716,7 @@ text:
     ...     2
     ...     3
     ...
-    ...     Some text.
+    ...     Some test.
     ...     >>> x+y
     ...     5
     ...     '''
@@ -730,7 +730,7 @@ text:
     Example: ('x, y = 2, 3  # no output expected\n', '', 1)
        Text: ''
     Example: ('if 1:\n    print(x)\n    print(y)\n', '2\n3\n', 2)
-       Text: '\nSome text.\n'
+       Text: '\nSome test.\n'
     Example: ('x+y\n', '5\n', 9)
        Text: ''
 
@@ -2209,9 +2209,9 @@ def test_DocTestSuite():
        """
 
 def test_DocFileSuite():
-    """We can test tests found in text files using a DocFileSuite.
+    """We can test tests found in test files using a DocFileSuite.
 
-       We create a suite by providing the names of one or more text
+       We create a suite by providing the names of one or more test
        files that include examples:
 
          >>> import unittest
@@ -2794,7 +2794,7 @@ the first file, NORMALIZE_WHITESPACE in the second).  This combination will
 allow thoroughly testing the -f and -o flags, as well as the doctest command's
 ability to process more than one file on the command line and, since the second
 file ends in '.py', its handling of python module files (as opposed to straight
-text files).
+test files).
 
     >>> from test.support import script_helper, temp_dir
     >>> with temp_dir() as tmpdir:

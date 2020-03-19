@@ -663,7 +663,7 @@ class SheetGUI:
         if self.currentxy is not None:
             self.change_cell()
         self.clearfocus()
-        self.beacon['text'] = cellname(x, y)
+        self.beacon['test'] = cellname(x, y)
         self.load_entry(x, y)
         self.entry.focus_set()
         self.currentxy = x, y
@@ -709,7 +709,7 @@ class SheetGUI:
             name1 = cellname(*self.currentxy)
             name2 = cellname(*self.cornerxy)
             name = "%s:%s" % (name1, name2)
-        self.beacon['text'] = name
+        self.beacon['test'] = name
 
 
     def clearfocus(self):
@@ -784,13 +784,13 @@ class SheetGUI:
                 continue
             cell = self.sheet.getcell(x, y)
             if cell is None:
-                gridcell['text'] = ""
+                gridcell['test'] = ""
             else:
                 if hasattr(cell, 'format'):
                     text, alignment = cell.format()
                 else:
                     text, alignment = str(cell), LEFT
-                gridcell['text'] = text
+                gridcell['test'] = text
                 gridcell['anchor'] = align2anchor[alignment]
 
 

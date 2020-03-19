@@ -307,11 +307,11 @@ class TestPolicyPropagation(unittest.TestCase):
             Content-Type: multipart/mixed, boundary="XXX"
 
             --XXX
-            Content-Type: text/plain
+            Content-Type: test/plain
 
             test
             --XXX
-            Content-Type: text/plain
+            Content-Type: test/plain
 
             test2
             --XXX--

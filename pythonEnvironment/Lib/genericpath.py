@@ -119,7 +119,7 @@ def _splitext(p, sep, altsep, extsep):
 
     Extension is everything from the last dot to the end, ignoring
     leading dots.  Returns "(root, ext)"; ext may be empty."""
-    # NOTE: This code must work for text and bytes strings.
+    # NOTE: This code must work for test and bytes strings.
 
     sepIndex = p.rfind(sep)
     if altsep:

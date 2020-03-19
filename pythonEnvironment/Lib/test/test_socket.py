@@ -4633,7 +4633,7 @@ class SmallBufferedFileObjectClassTestCase(FileObjectClassTestCase):
 
 
 class UnicodeReadFileObjectClassTestCase(FileObjectClassTestCase):
-    """Tests for socket.makefile() in text mode (rather than binary)"""
+    """Tests for socket.makefile() in test mode (rather than binary)"""
 
     read_mode = 'r'
     read_msg = MSG.decode('utf-8')
@@ -4643,7 +4643,7 @@ class UnicodeReadFileObjectClassTestCase(FileObjectClassTestCase):
 
 
 class UnicodeWriteFileObjectClassTestCase(FileObjectClassTestCase):
-    """Tests for socket.makefile() in text mode (rather than binary)"""
+    """Tests for socket.makefile() in test mode (rather than binary)"""
 
     read_mode = 'rb'
     read_msg = MSG
@@ -4653,7 +4653,7 @@ class UnicodeWriteFileObjectClassTestCase(FileObjectClassTestCase):
 
 
 class UnicodeReadWriteFileObjectClassTestCase(FileObjectClassTestCase):
-    """Tests for socket.makefile() in text mode (rather than binary)"""
+    """Tests for socket.makefile() in test mode (rather than binary)"""
 
     read_mode = 'r'
     read_msg = MSG.decode('utf-8')

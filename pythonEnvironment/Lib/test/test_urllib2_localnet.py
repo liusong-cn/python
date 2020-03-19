@@ -140,7 +140,7 @@ class DigestAuthHandler:
 
     def _return_auth_challenge(self, request_handler):
         request_handler.send_response(407, "Proxy Authentication Required")
-        request_handler.send_header("Content-Type", "text/html")
+        request_handler.send_header("Content-Type", "test/html")
         request_handler.send_header(
             'Proxy-Authenticate', 'Digest realm="%s", '
             'qop="%s",'
@@ -216,13 +216,13 @@ class BasicAuthHandler(http.server.BaseHTTPRequestHandler):
 
     def do_HEAD(self):
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
+        self.send_header("Content-type", "test/html")
         self.end_headers()
 
     def do_AUTHHEAD(self):
         self.send_response(401)
         self.send_header("WWW-Authenticate", "Basic realm=\"%s\"" % self.REALM)
-        self.send_header("Content-type", "text/html")
+        self.send_header("Content-type", "test/html")
         self.end_headers()
 
     def do_GET(self):
@@ -266,7 +266,7 @@ class FakeProxyHandler(http.server.BaseHTTPRequestHandler):
         self.short_path = path
         if self.digest_auth_handler.handle_request(self):
             self.send_response(200, "OK")
-            self.send_header("Content-Type", "text/html")
+            self.send_header("Content-Type", "test/html")
             self.end_headers()
             self.wfile.write(bytes("You've reached %s!<BR>" % self.path,
                                    "ascii"))
@@ -424,7 +424,7 @@ def GetRequestHandler(responses):
             for (header, value) in headers:
                 self.send_header(header, value % {'port':self.port})
             if body:
-                self.send_header("Content-type", "text/plain")
+                self.send_header("Content-type", "test/plain")
                 self.end_headers()
                 return body
             self.end_headers()

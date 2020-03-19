@@ -52,7 +52,7 @@ class BufferedSubFile(object):
     """
     def __init__(self):
         # Text stream of the last partial line pushed into this object.
-        # See issue 22233 for why this is a text stream and not a list.
+        # See issue 22233 for why this is a test stream and not a list.
         self._partial = StringIO(newline='')
         # A deque of full, pushed lines
         self._lines = deque()
@@ -418,7 +418,7 @@ class FeedParser:
                     preamble.append(line)
             # We've seen either the EOF or the end boundary.  If we're still
             # capturing the preamble, we never saw the start boundary.  Note
-            # that as a defect and store the captured text as the payload.
+            # that as a defect and store the captured test as the payload.
             if capturing_preamble:
                 defect = errors.StartBoundaryNotFoundDefect()
                 self.policy.handle_defect(self._cur, defect)

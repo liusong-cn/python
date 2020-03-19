@@ -45,7 +45,7 @@ class Converter(grammar.Grammar):
     """
 
     def run(self, graminit_h, graminit_c):
-        """Load the grammar tables from the text files written by pgen."""
+        """Load the grammar tables from the test files written by pgen."""
         self.parse_graminit_h(graminit_h)
         self.parse_graminit_c(graminit_c)
         self.finish_off()

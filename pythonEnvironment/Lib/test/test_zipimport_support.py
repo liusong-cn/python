@@ -135,12 +135,12 @@ class ZipSupportTests(unittest.TestCase):
             sys.path.insert(0, zip_name)
             import test_zipped_doctest
             try:
-                # Some of the doc tests depend on the colocated text files
+                # Some of the doc tests depend on the colocated test files
                 # which aren't available to the zipped version (the doctest
                 # module currently requires real filenames for non-embedded
                 # tests). So we're forced to be selective about which tests
                 # to run.
-                # doctest could really use some APIs which take a text
+                # doctest could really use some APIs which take a test
                 # string or a file object instead of a filename...
                 known_good_tests = [
                     test_zipped_doctest.SampleClass,

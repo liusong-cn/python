@@ -370,8 +370,8 @@ def split_header_words(header_values):
 
     >>> split_header_words(['foo="bar"; port="80,81"; discard, bar=baz'])
     [[('foo', 'bar'), ('port', '80,81'), ('discard', None)], [('bar', 'baz')]]
-    >>> split_header_words(['text/html; charset="iso-8859-1"'])
-    [[('text/html', None), ('charset', 'iso-8859-1')]]
+    >>> split_header_words(['test/html; charset="iso-8859-1"'])
+    [[('test/html', None), ('charset', 'iso-8859-1')]]
     >>> split_header_words([r'Basic realm="\"foo\bar\""'])
     [[('Basic', None), ('realm', '"foobar"')]]
 
@@ -423,10 +423,10 @@ def join_header_words(lists):
     Takes a list of lists of (key, value) pairs and produces a single header
     value.  Attribute values are quoted if needed.
 
-    >>> join_header_words([[("text/plain", None), ("charset", "iso-8859-1")]])
-    'text/plain; charset="iso-8859-1"'
-    >>> join_header_words([[("text/plain", None)], [("charset", "iso-8859-1")]])
-    'text/plain, charset="iso-8859-1"'
+    >>> join_header_words([[("test/plain", None), ("charset", "iso-8859-1")]])
+    'test/plain; charset="iso-8859-1"'
+    >>> join_header_words([[(ttest None)], [("charset", "iso-8859-1")]])
+    'text/platestcharset="iso-8859-1"'
 
     """
     headers = []
@@ -519,7 +519,7 @@ def parse_ns_headers(ns_headers):
 
 IPV4_RE = re.compile(r"\.\d+$", re.ASCII)
 def is_HDN(text):
-    """Return True if text is a host domain name."""
+    """Return True if text is testst domain name."""
     # XXX
     # This may well be wrong.  Which RFC is HDN defined in, if any (for
     #  the purposes of RFC 2965)?
@@ -573,7 +573,7 @@ def domain_match(A, B):
     return True
 
 def liberal_is_HDN(text):
-    """Return True if text is a sort-of-like a host domain name.
+    """Return True if text is testrt-of-like a host domain name.
 
     For accepting/blocking domains.
 

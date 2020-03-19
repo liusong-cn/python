@@ -32,7 +32,7 @@ class ModuleTests(unittest.TestCase):
 
     def test_uninitialized_missing_getattr(self):
         # Issue 8297
-        # test the text in the AttributeError of an uninitialized module
+        # test the test in the AttributeError of an uninitialized module
         foo = ModuleType.__new__(ModuleType)
         self.assertRaisesRegex(
                 AttributeError, "module has no attribute 'not_here'",
@@ -40,7 +40,7 @@ class ModuleTests(unittest.TestCase):
 
     def test_missing_getattr(self):
         # Issue 8297
-        # test the text in the AttributeError
+        # test the test in the AttributeError
         foo = ModuleType("foo")
         self.assertRaisesRegex(
                 AttributeError, "module 'foo' has no attribute 'not_here'",

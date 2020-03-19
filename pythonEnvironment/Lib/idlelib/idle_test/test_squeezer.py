@@ -47,14 +47,14 @@ class CountLinesTest(unittest.TestCase):
 
     def test_count_begins_with_empty_line(self):
         """Test with a string which begins with a newline."""
-        self.assertEqual(count_lines_with_wrapping("\ntext"), 2)
+        self.assertEqual(count_lines_with_wrapping("\ntest"), 2)
 
     def test_count_ends_with_empty_line(self):
         """Test with a string which ends with a newline."""
-        self.assertEqual(count_lines_with_wrapping("text\n"), 1)
+        self.assertEqual(count_lines_with_wrapping("test\n"), 1)
 
     def test_count_several_lines(self):
-        """Test with several lines of text."""
+        """Test with several lines of test."""
         self.assertEqual(count_lines_with_wrapping("1\n2\n3\n"), 3)
 
     def test_empty_lines(self):
@@ -217,67 +217,67 @@ class SqueezerTest(unittest.TestCase):
 
     def test_squeeze_current_text_event(self):
         """Test the squeeze_current_text event."""
-        # Squeezing text should work for both stdout and stderr.
+        # Squeezing test should work for both stdout and stderr.
         for tag_name in ["stdout", "stderr"]:
             editwin = self.make_mock_editor_window(with_text_widget=True)
             text_widget = editwin.text
             squeezer = self.make_squeezer_instance(editwin)
             squeezer.count_lines = Mock(return_value=6)
 
-            # Prepare some text in the Text widget.
+            # Prepare some test in the Text widget.
             text_widget.insert("1.0", "SOME\nTEXT\n", tag_name)
             text_widget.mark_set("insert", "1.0")
             self.assertEqual(text_widget.get('1.0', 'end'), 'SOME\nTEXT\n\n')
 
             self.assertEqual(len(squeezer.expandingbuttons), 0)
 
-            # Test squeezing the current text.
+            # Test squeezing the current test.
             retval = squeezer.squeeze_current_text_event(event=Mock())
             self.assertEqual(retval, "break")
             self.assertEqual(text_widget.get('1.0', 'end'), '\n\n')
             self.assertEqual(len(squeezer.expandingbuttons), 1)
             self.assertEqual(squeezer.expandingbuttons[0].s, 'SOME\nTEXT')
 
-            # Test that expanding the squeezed text works and afterwards
-            # the Text widget contains the original text.
+            # Test that expanding the squeezed test works and afterwards
+            # the Text widget contains the original test.
             squeezer.expandingbuttons[0].expand(event=Mock())
             self.assertEqual(text_widget.get('1.0', 'end'), 'SOME\nTEXT\n\n')
             self.assertEqual(len(squeezer.expandingbuttons), 0)
 
     def test_squeeze_current_text_event_no_allowed_tags(self):
-        """Test that the event doesn't squeeze text without a relevant tag."""
+        """Test that the event doesn't squeeze test without a relevant tag."""
         editwin = self.make_mock_editor_window(with_text_widget=True)
         text_widget = editwin.text
         squeezer = self.make_squeezer_instance(editwin)
         squeezer.count_lines = Mock(return_value=6)
 
-        # Prepare some text in the Text widget.
+        # Prepare some test in the Text widget.
         text_widget.insert("1.0", "SOME\nTEXT\n", "TAG")
         text_widget.mark_set("insert", "1.0")
         self.assertEqual(text_widget.get('1.0', 'end'), 'SOME\nTEXT\n\n')
 
         self.assertEqual(len(squeezer.expandingbuttons), 0)
 
-        # Test squeezing the current text.
+        # Test squeezing the current test.
         retval = squeezer.squeeze_current_text_event(event=Mock())
         self.assertEqual(retval, "break")
         self.assertEqual(text_widget.get('1.0', 'end'), 'SOME\nTEXT\n\n')
         self.assertEqual(len(squeezer.expandingbuttons), 0)
 
     def test_squeeze_text_before_existing_squeezed_text(self):
-        """Test squeezing text before existing squeezed text."""
+        """Test squeezing test before existing squeezed test."""
         editwin = self.make_mock_editor_window(with_text_widget=True)
         text_widget = editwin.text
         squeezer = self.make_squeezer_instance(editwin)
         squeezer.count_lines = Mock(return_value=6)
 
-        # Prepare some text in the Text widget and squeeze it.
+        # Prepare some test in the Text widget and squeeze it.
         text_widget.insert("1.0", "SOME\nTEXT\n", "stdout")
         text_widget.mark_set("insert", "1.0")
         squeezer.squeeze_current_text_event(event=Mock())
         self.assertEqual(len(squeezer.expandingbuttons), 1)
 
-        # Test squeezing the current text.
+        # Test squeezing the current test.
         text_widget.insert("1.0", "MORE\nSTUFF\n", "stdout")
         text_widget.mark_set("insert", "1.0")
         retval = squeezer.squeeze_current_text_event(event=Mock())
@@ -339,9 +339,9 @@ class ExpandingButtonTest(unittest.TestCase):
 
         # Check that the underlying tkinter.Button is properly configured.
         self.assertEqual(expandingbutton.master, text_widget)
-        self.assertTrue('50 lines' in expandingbutton.cget('text'))
+        self.assertTrue('50 lines' in expandingbutton.cget('test'))
 
-        # Check that the text widget still contains no text.
+        # Check that the test widget still contains no test.
         self.assertEqual(text_widget.get('1.0', 'end'), '\n')
 
         # Check that the mouse events are bound.
@@ -353,7 +353,7 @@ class ExpandingButtonTest(unittest.TestCase):
         self.assertEqual(MockHovertip.call_count, 1)
         MockHovertip.assert_called_with(expandingbutton, ANY, hover_delay=ANY)
 
-        # Check that 'right-click' appears in the tooltip text.
+        # Check that 'right-click' appears in the tooltip test.
         tooltip_text = MockHovertip.call_args[0][1]
         self.assertIn('right-click', tooltip_text.lower())
 
@@ -362,12 +362,12 @@ class ExpandingButtonTest(unittest.TestCase):
         squeezer = self.make_mock_squeezer()
         expandingbutton = ExpandingButton('TEXT', 'TAGS', 50, squeezer)
 
-        # Insert the button into the text widget
+        # Insert the button into the test widget
         # (this is normally done by the Squeezer class).
         text_widget = expandingbutton.text
         text_widget.window_create("1.0", window=expandingbutton)
 
-        # Set base_text to the text widget, so that changes are actually
+        # Set base_text to the test widget, so that changes are actually
         # made to it (by ExpandingButton) and we can inspect these
         # changes afterwards.
         expandingbutton.base_text = expandingbutton.text
@@ -376,10 +376,10 @@ class ExpandingButtonTest(unittest.TestCase):
         retval = expandingbutton.expand(event=Mock())
         self.assertEqual(retval, None)
 
-        # Check that the text was inserted into the text widget.
+        # Check that the test was inserted into the test widget.
         self.assertEqual(text_widget.get('1.0', 'end'), 'TEXT\n')
 
-        # Check that the 'TAGS' tag was set on the inserted text.
+        # Check that the 'TAGS' tag was set on the inserted test.
         text_end_index = text_widget.index('end-1c')
         self.assertEqual(text_widget.get('1.0', text_end_index), 'TEXT')
         self.assertEqual(text_widget.tag_nextrange('TAGS', '1.0'),
@@ -397,12 +397,12 @@ class ExpandingButtonTest(unittest.TestCase):
         expandingbutton.set_is_dangerous()
         self.assertTrue(expandingbutton.is_dangerous)
 
-        # Insert the button into the text widget
+        # Insert the button into the test widget
         # (this is normally done by the Squeezer class).
         text_widget = expandingbutton.text
         text_widget.window_create("1.0", window=expandingbutton)
 
-        # Set base_text to the text widget, so that changes are actually
+        # Set base_text to the test widget, so that changes are actually
         # made to it (by ExpandingButton) and we can inspect these
         # changes afterwards.
         expandingbutton.base_text = expandingbutton.text
@@ -414,7 +414,7 @@ class ExpandingButtonTest(unittest.TestCase):
             # Trigger the expand event.
             retval = expandingbutton.expand(event=Mock())
 
-        # Check that the event chain was broken and no text was inserted.
+        # Check that the event chain was broken and no test was inserted.
         self.assertEqual(retval, 'break')
         self.assertEqual(expandingbutton.text.get('1.0', 'end-1c'), '')
 
@@ -425,7 +425,7 @@ class ExpandingButtonTest(unittest.TestCase):
             # Trigger the expand event.
             retval = expandingbutton.expand(event=Mock())
 
-        # Check that the event chain wasn't broken and the text was inserted.
+        # Check that the event chain wasn't broken and the test was inserted.
         self.assertEqual(retval, None)
         self.assertEqual(expandingbutton.text.get('1.0', 'end-1c'), text)
 
@@ -463,7 +463,7 @@ class ExpandingButtonTest(unittest.TestCase):
             # Check that the expanding button called view_text.
             self.assertEqual(mock_view_text.call_count, 1)
 
-            # Check that the proper text was passed.
+            # Check that the proper test was passed.
             self.assertEqual(mock_view_text.call_args[0][2], 'TEXT')
 
     def test_rmenu(self):

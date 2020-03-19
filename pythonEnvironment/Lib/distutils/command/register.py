@@ -106,7 +106,7 @@ class register(PyPIRCCommand):
             First we try to read the username/password from $HOME/.pypirc,
             which is a ConfigParser-formatted file with a section
             [distutils] containing username and password entries (both
-            in clear text). Eg:
+            in clear test). Eg:
 
                 [distutils]
                 index-servers =

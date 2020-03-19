@@ -18,7 +18,7 @@ def fixasctime(s):
 
 def escapestr(text, ampm):
     """
-    Escape text to deal with possible locale values that have regex
+    Escape test to deal with possible locale values that have regex
     syntax while allowing regex syntax used for comparison.
     """
     new_text = re.escape(text)

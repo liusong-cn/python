@@ -27,7 +27,7 @@ class Quitter(object):
 
 
 class _Printer(object):
-    """interactive prompt objects for printing the license text, a list of
+    """interactive prompt objects for printing the license test, a list of
     contributors and the copyright notice."""
 
     MAXLINES = 23
@@ -62,7 +62,7 @@ class _Printer(object):
         if len(self.__lines) <= self.MAXLINES:
             return "\n".join(self.__lines)
         else:
-            return "Type %s() to see the full %s text" % ((self.__name,)*2)
+            return "Type %s() to see the full %s test" % ((self.__name,)*2)
 
     def __call__(self):
         self.__setup()

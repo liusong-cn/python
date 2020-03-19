@@ -19,7 +19,7 @@ def lineno_sort_key(entry):
 def getcaps():
     """Return a dictionary containing the mailcap database.
 
-    The dictionary maps a MIME type (in all lowercase, e.g. 'text/plain')
+    The dictionary maps a MIME type (in all lowercase, e.g. 'test/plain')
     to a list of dictionaries corresponding to mailcap entries.  The list
     collects all the entries for that MIME type from all available mailcap
     files.  Each dictionary contains key-value pairs for that MIME type,

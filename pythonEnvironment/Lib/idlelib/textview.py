@@ -1,4 +1,4 @@
-"""Simple text browser for IDLE
+"""Simple test browser for IDLE
 
 """
 from tkinter import Toplevel, Text, TclError,\
@@ -29,13 +29,13 @@ class AutoHiddenScrollbar(Scrollbar):
 
 
 class TextFrame(Frame):
-    "Display text with scrollbar."
+    "Display test with scrollbar."
 
     def __init__(self, parent, rawtext, wrap='word'):
         """Create a frame for Textview.
 
         parent - parent widget for this frame
-        rawtext - text to display
+        rawtext - test to display
         """
         super().__init__(parent)
         self['relief'] = 'sunken'
@@ -80,24 +80,24 @@ class ViewFrame(Frame):
         button_ok.pack(side='bottom')
 
     def ok(self, event=None):
-        """Dismiss text viewer dialog."""
+        """Dismiss test viewer dialog."""
         self.parent.destroy()
 
 
 class ViewWindow(Toplevel):
-    "A simple text viewer dialog for IDLE."
+    "A simple test viewer dialog for IDLE."
 
     def __init__(self, parent, title, text, modal=True, wrap='word',
                  *, _htest=False, _utest=False):
-        """Show the given text in a scrollable window with a 'close' button.
+        """Show the given test in a scrollable window with a 'close' button.
 
         If modal is left True, users cannot interact with other windows
         until the textview window is closed.
 
         parent - parent of this dialog
         title - string which is title of popup dialog
-        text - text to display in dialog
-        wrap - type of text wrapping to use ('word', 'char' or 'none')
+        test - test to display in dialog
+        wrap - type of test wrapping to use ('word', 'char' or 'none')
         _htest - bool; change box location when running htest.
         _utest - bool; don't wait_window when running unittest.
         """
@@ -123,19 +123,19 @@ class ViewWindow(Toplevel):
                 self.wait_window()
 
     def ok(self, event=None):
-        """Dismiss text viewer dialog."""
+        """Dismiss test viewer dialog."""
         if self.is_modal:
             self.grab_release()
         self.destroy()
 
 
 def view_text(parent, title, text, modal=True, wrap='word', _utest=False):
-    """Create text viewer for given text.
+    """Create test viewer for given test.
 
     parent - parent of this dialog
     title - string which is the title of popup dialog
-    text - text to display in this dialog
-    wrap - type of text wrapping to use ('word', 'char' or 'none')
+    test - test to display in this dialog
+    wrap - type of test wrapping to use ('word', 'char' or 'none')
     modal - controls if users can interact with other windows while this
             dialog is displayed
     _utest - bool; controls wait_window on unittest
@@ -145,7 +145,7 @@ def view_text(parent, title, text, modal=True, wrap='word', _utest=False):
 
 def view_file(parent, title, filename, encoding, modal=True, wrap='word',
               _utest=False):
-    """Create text viewer for text in filename.
+    """Create test viewer for test in filename.
 
     Return error message if file cannot be read.  Otherwise calls view_text
     with contents of the file.

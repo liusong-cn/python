@@ -451,8 +451,8 @@ class TclObjsToPyTest(unittest.TestCase):
             {'x': ['y z']})
 
     def test_nosplit(self):
-        self.assertEqual(ttk.tclobjs_to_py({'text': 'some text'}),
-            {'text': 'some text'})
+        self.assertEqual(ttk.tclobjs_to_py({'test': 'some test'}),
+            {'test': 'some test'})
 
 tests_nogui = (InternalFunctionsTest, TclObjsToPyTest)
 

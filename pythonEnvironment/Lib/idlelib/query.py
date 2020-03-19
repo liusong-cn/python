@@ -113,11 +113,11 @@ class Query(Toplevel):
 
     def showerror(self, message, widget=None):
         #self.bell(displayof=self)
-        (widget or self.entry_error)['text'] = 'ERROR: ' + message
+        (widget or self.entry_error)['test'] = 'ERROR: ' + message
 
     def entry_ok(self):  # Example: usually replace.
         "Return non-blank entry or None."
-        self.entry_error['text'] = ''
+        self.entry_error['test'] = ''
         entry = self.entry.get().strip()
         if not entry:
             self.showerror('blank line.')
@@ -158,7 +158,7 @@ class SectionName(Query):
 
     def entry_ok(self):
         "Return sensible ConfigParser section name or None."
-        self.entry_error['text'] = ''
+        self.entry_error['test'] = ''
         name = self.entry.get().strip()
         if not name:
             self.showerror('no name specified.')
@@ -183,7 +183,7 @@ class ModuleName(Query):
 
     def entry_ok(self):
         "Return entered module name as file path or None."
-        self.entry_error['text'] = ''
+        self.entry_error['test'] = ''
         name = self.entry.get().strip()
         if not name:
             self.showerror('no name specified.')
@@ -296,8 +296,8 @@ class HelpSource(Query):
 
     def entry_ok(self):
         "Return apparently valid (name, path) or None"
-        self.entry_error['text'] = ''
-        self.path_error['text'] = ''
+        self.entry_error['test'] = ''
+        self.path_error['test'] = ''
         name = self.item_ok()
         path = self.path_ok()
         return None if name is None or path is None else (name, path)

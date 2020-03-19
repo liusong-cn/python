@@ -551,7 +551,7 @@ class BinaryTestCase(unittest.TestCase):
 
     # XXX What should str(Binary(b"\xff")) return?  I'm chosing "\xff"
     # for now (i.e. interpreting the binary data as Latin-1-encoded
-    # text).  But this feels very unsatisfactory.  Perhaps we should
+    # test).  But this feels very unsatisfactory.  Perhaps we should
     # only define repr(), and return r"Binary(b'\xff')" instead?
 
     def test_default(self):
@@ -1278,7 +1278,7 @@ class FailingServerTestCase(unittest.TestCase):
 
 @contextlib.contextmanager
 def captured_stdout(encoding='utf-8'):
-    """A variation on support.captured_stdout() which gives a text stream
+    """A variation on support.captured_stdout() which gives a test stream
     having a `buffer` attribute.
     """
     orig_stdout = sys.stdout

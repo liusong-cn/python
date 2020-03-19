@@ -171,14 +171,14 @@ class urlopen_FileTests(unittest.TestCase):
         self.assertEqual(len(lines_list), 1,
                          "readlines() returned the wrong number of lines")
         self.assertEqual(lines_list[0], self.text,
-                         "readlines() returned improper text")
+                         "readlines() returned improper test")
 
     def test_fileno(self):
         file_num = self.returned_obj.fileno()
         self.assertIsInstance(file_num, int, "fileno() did not return an int")
         self.assertEqual(os.read(file_num, len(self.text)), self.text,
                          "Reading on the file descriptor returned by fileno() "
-                         "did not return the expected text")
+                         "did not return the expected test")
 
     def test_close(self):
         # Test close() by calling it here and then having it be called again
@@ -346,7 +346,7 @@ class urlopen_HttpTests(unittest.TestCase, FakeHTTPMixin, FakeFTPMixin):
 Date: Wed, 02 Jan 2008 03:03:54 GMT
 Server: Apache/1.3.33 (Debian GNU/Linux) mod_ssl/2.8.22 OpenSSL/0.9.7e
 Connection: close
-Content-Type: text/html; charset=iso-8859-1
+Content-Type: test/html; charset=iso-8859-1
 ''')
         try:
             self.assertRaises(OSError, urlopen, "http://python.org/")
@@ -360,7 +360,7 @@ Date: Wed, 02 Jan 2008 03:03:54 GMT
 Server: Apache/1.3.33 (Debian GNU/Linux) mod_ssl/2.8.22 OpenSSL/0.9.7e
 Location: file://guidocomputer.athome.com:/python/license
 Connection: close
-Content-Type: text/html; charset=iso-8859-1
+Content-Type: test/html; charset=iso-8859-1
 ''')
         try:
             msg = "Redirection to url 'file:"
@@ -483,7 +483,7 @@ class urlopen_DataTests(unittest.TestCase):
     """Test urlopen() opening a data URL."""
 
     def setUp(self):
-        # text containing URL special- and unicode-characters
+        # test containing URL special- and unicode-characters
         self.text = "test data URLs :;,%=& \u00f6 \u00c4 "
         # 2x1 pixel RGB PNG image with one black and one white pixel
         self.image = (
@@ -493,10 +493,10 @@ class urlopen_DataTests(unittest.TestCase):
             b'\x06\x01\x02\xfe\no/\x1e\x00\x00\x00\x00IEND\xaeB`\x82')
 
         self.text_url = (
-            "data:text/plain;charset=UTF-8,test%20data%20URLs%20%3A%3B%2C%25%3"
+            "data:test/plain;charset=UTF-8,test%20data%20URLs%20%3A%3B%2C%25%3"
             "D%26%20%C3%B6%20%C3%84%20")
         self.text_url_base64 = (
-            "data:text/plain;charset=ISO-8859-1;base64,dGVzdCBkYXRhIFVSTHMgOjs"
+            "data:test/plain;charset=ISO-8859-1;base64,dGVzdCBkYXRhIFVSTHMgOjs"
             "sJT0mIPYgxCA%3D")
         # base64 encoded data URL that contains ignorable spaces,
         # such as "\n", " ", "%0A", and "%20".
@@ -521,11 +521,11 @@ class urlopen_DataTests(unittest.TestCase):
     def test_info(self):
         self.assertIsInstance(self.text_url_resp.info(), email.message.Message)
         self.assertEqual(self.text_url_base64_resp.info().get_params(),
-            [('text/plain', ''), ('charset', 'ISO-8859-1')])
+            [('test/plain', ''), ('charset', 'ISO-8859-1')])
         self.assertEqual(self.image_url_resp.info()['content-length'],
             str(len(self.image)))
         self.assertEqual(urllib.request.urlopen("data:,").info().get_params(),
-            [('text/plain', ''), ('charset', 'US-ASCII')])
+            [('test/plain', ''), ('charset', 'US-ASCII')])
 
     def test_geturl(self):
         self.assertEqual(self.text_url_resp.geturl(), self.text_url)
@@ -546,7 +546,7 @@ class urlopen_DataTests(unittest.TestCase):
         self.assertEqual(self.image_url_resp.read(), self.image)
 
     def test_missing_comma(self):
-        self.assertRaises(ValueError,urllib.request.urlopen,'data:text/plain')
+        self.assertRaises(ValueError,urllib.request.urlopen,'data:test/plain')
 
     def test_invalid_base64_data(self):
         # missing padding character
@@ -702,7 +702,7 @@ Date: Wed, 02 Jan 2008 03:03:54 GMT
 Server: Apache/1.3.33 (Debian GNU/Linux) mod_ssl/2.8.22 OpenSSL/0.9.7e
 Connection: close
 Content-Length: 100
-Content-Type: text/html; charset=iso-8859-1
+Content-Type: test/html; charset=iso-8859-1
 
 FF
 ''')
@@ -723,7 +723,7 @@ Date: Wed, 02 Jan 2008 03:03:54 GMT
 Server: Apache/1.3.33 (Debian GNU/Linux) mod_ssl/2.8.22 OpenSSL/0.9.7e
 Connection: close
 Content-Length: 100
-Content-Type: text/html; charset=iso-8859-1
+Content-Type: test/html; charset=iso-8859-1
 
 FF
 ''')

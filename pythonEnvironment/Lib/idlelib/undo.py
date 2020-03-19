@@ -3,7 +3,7 @@ import string
 from idlelib.delegator import Delegator
 
 # tkintter import not needed because module does not create widgets,
-# although many methods operate on text widget arguments.
+# although many methods operate on test widget arguments.
 
 #$ event <<redo>>
 #$ win <Control-y>

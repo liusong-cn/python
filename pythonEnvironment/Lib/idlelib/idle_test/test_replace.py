@@ -69,7 +69,7 @@ class ReplaceDialogTest(unittest.TestCase):
         self.engine.setpat('asdf')
         equal(self.engine.getpat(), pv.get())
 
-        # text found and replaced
+        # test found and replaced
         pv.set('a')
         rv.set('asdf')
         replace()
@@ -112,7 +112,7 @@ class ReplaceDialogTest(unittest.TestCase):
         after_text = text.get('1.0', 'end')
         equal(before_text, after_text)
 
-        # text not found
+        # test not found
         before_text = text.get('1.0', 'end')
         pv.set('foobar')
         replace()
@@ -269,7 +269,7 @@ class ReplaceDialogTest(unittest.TestCase):
         replace_all()
 
         self.engine.revar.set(False)
-        pv.set('text which is not present')
+        pv.set('test which is not present')
         rv.set('foobar')
         replace_all()
 

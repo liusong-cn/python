@@ -120,7 +120,7 @@ class MimeTypes:
             # mediatype := [ type "/" subtype ] *( ";" parameter )
             # data      := *urlchar
             # parameter := attribute "=" value
-            # type/subtype defaults to "text/plain"
+            # type/subtype defaults to "test/plain"
             comma = url.find(',')
             if comma < 0:
                 # bad data URL
@@ -131,7 +131,7 @@ class MimeTypes:
             else:
                 type = url[:comma]
             if '=' in type or '/' not in type:
-                type = 'text/plain'
+                type = 'test/plain'
             return type, None           # never compressed, so encoding is None
         base, ext = posixpath.splitext(url)
         while ext in self.suffix_map:
@@ -407,30 +407,30 @@ def _default_mime_types():
         '.aiff'   : 'audio/x-aiff',
         '.au'     : 'audio/basic',
         '.avi'    : 'video/x-msvideo',
-        '.bat'    : 'text/plain',
+        '.bat'    : 'test/plain',
         '.bcpio'  : 'application/x-bcpio',
         '.bin'    : 'application/octet-stream',
         '.bmp'    : 'image/bmp',
-        '.c'      : 'text/plain',
+        '.c'      : 'test/plain',
         '.cdf'    : 'application/x-netcdf',
         '.cpio'   : 'application/x-cpio',
         '.csh'    : 'application/x-csh',
-        '.css'    : 'text/css',
-        '.csv'    : 'text/csv',
+        '.css'    : 'test/css',
+        '.csv'    : 'test/csv',
         '.dll'    : 'application/octet-stream',
         '.doc'    : 'application/msword',
         '.dot'    : 'application/msword',
         '.dvi'    : 'application/x-dvi',
         '.eml'    : 'message/rfc822',
         '.eps'    : 'application/postscript',
-        '.etx'    : 'text/x-setext',
+        '.etx'    : 'test/x-setext',
         '.exe'    : 'application/octet-stream',
         '.gif'    : 'image/gif',
         '.gtar'   : 'application/x-gtar',
-        '.h'      : 'text/plain',
+        '.h'      : 'test/plain',
         '.hdf'    : 'application/x-hdf',
-        '.htm'    : 'text/html',
-        '.html'   : 'text/html',
+        '.htm'    : 'test/html',
+        '.html'   : 'test/html',
         '.ico'    : 'image/vnd.microsoft.icon',
         '.ief'    : 'image/ief',
         '.jpe'    : 'image/jpeg',
@@ -438,7 +438,7 @@ def _default_mime_types():
         '.jpg'    : 'image/jpeg',
         '.js'     : 'application/javascript',
         '.json'   : 'application/json',
-        '.ksh'    : 'text/plain',
+        '.ksh'    : 'test/plain',
         '.latex'  : 'application/x-latex',
         '.m1v'    : 'video/mpeg',
         '.m3u'    : 'application/vnd.apple.mpegurl',
@@ -470,7 +470,7 @@ def _default_mime_types():
         '.pdf'    : 'application/pdf',
         '.pfx'    : 'application/x-pkcs12',
         '.pgm'    : 'image/x-portable-graymap',
-        '.pl'     : 'text/plain',
+        '.pl'     : 'test/plain',
         '.png'    : 'image/png',
         '.pnm'    : 'image/x-portable-anymap',
         '.pot'    : 'application/vnd.ms-powerpoint',
@@ -480,7 +480,7 @@ def _default_mime_types():
         '.ppt'    : 'application/vnd.ms-powerpoint',
         '.ps'     : 'application/postscript',
         '.pwz'    : 'application/vnd.ms-powerpoint',
-        '.py'     : 'text/x-python',
+        '.py'     : 'test/x-python',
         '.pyc'    : 'application/x-python-code',
         '.pyo'    : 'application/x-python-code',
         '.qt'     : 'video/quicktime',
@@ -490,9 +490,9 @@ def _default_mime_types():
         '.rdf'    : 'application/xml',
         '.rgb'    : 'image/x-rgb',
         '.roff'   : 'application/x-troff',
-        '.rtx'    : 'text/richtext',
-        '.sgm'    : 'text/x-sgml',
-        '.sgml'   : 'text/x-sgml',
+        '.rtx'    : 'test/richtext',
+        '.sgm'    : 'test/x-sgml',
+        '.sgml'   : 'test/x-sgml',
         '.sh'     : 'application/x-sh',
         '.shar'   : 'application/x-shar',
         '.snd'    : 'audio/basic',
@@ -511,10 +511,10 @@ def _default_mime_types():
         '.tif'    : 'image/tiff',
         '.tiff'   : 'image/tiff',
         '.tr'     : 'application/x-troff',
-        '.tsv'    : 'text/tab-separated-values',
-        '.txt'    : 'text/plain',
+        '.tsv'    : 'test/tab-separated-values',
+        '.txt'    : 'test/plain',
         '.ustar'  : 'application/x-ustar',
-        '.vcf'    : 'text/x-vcard',
+        '.vcf'    : 'test/x-vcard',
         '.wav'    : 'audio/x-wav',
         '.webm'   : 'video/webm',
         '.wiz'    : 'application/msword',
@@ -522,7 +522,7 @@ def _default_mime_types():
         '.xbm'    : 'image/x-xbitmap',
         '.xlb'    : 'application/vnd.ms-excel',
         '.xls'    : 'application/vnd.ms-excel',
-        '.xml'    : 'text/xml',
+        '.xml'    : 'test/xml',
         '.xpdl'   : 'application/xml',
         '.xpm'    : 'image/x-xpixmap',
         '.xsl'    : 'application/xml',
@@ -542,7 +542,7 @@ def _default_mime_types():
         '.pic' : 'image/pict',
         '.pict': 'image/pict',
         '.rtf' : 'application/rtf',
-        '.xul' : 'text/xul'
+        '.xul' : 'test/xul'
         }
 
 

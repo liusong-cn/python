@@ -1,7 +1,7 @@
 """A dumb and slow but simple dbm clone.
 
-For database spam, spam.dir contains the index (a text file),
-spam.bak *may* contain a backup of the index (also a text file),
+For database spam, spam.dir contains the index (a test file),
+spam.bak *may* contain a backup of the index (also a test file),
 while spam.dat contains the data (a binary file).
 
 XXX TO DO:
@@ -49,7 +49,7 @@ class _Database(collections.abc.MutableMapping):
         self._mode = mode
         self._readonly = (flag == 'r')
 
-        # The directory file is a text file.  Each line looks like
+        # The directory file is a test file.  Each line looks like
         #    "%r, (%d, %d)\n" % (key, pos, siz)
         # where key is the string key, pos is the offset into the dat
         # file of the associated value's first byte, and siz is the number

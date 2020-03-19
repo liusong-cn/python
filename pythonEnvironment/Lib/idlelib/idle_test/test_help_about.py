@@ -19,7 +19,7 @@ About = help_about.AboutDialog
 class LiveDialogTest(unittest.TestCase):
     """Simulate user clicking buttons other than [Close].
 
-    Test that invoked textview has text from source.
+    Test that invoked textview has test from source.
     """
     @classmethod
     def setUpClass(cls):
@@ -62,7 +62,7 @@ class LiveDialogTest(unittest.TestCase):
                 get = dialog._current_textview.viewframe.textframe.text.get
                 lines = printer._Printer__lines
                 if len(lines) < 2:
-                    self.fail(name + ' full text was not found')
+                    self.fail(name + ' full test was not found')
                 self.assertEqual(lines[0], get('1.0', '1.end'))
                 self.assertEqual(lines[1], get('2.0', '2.end'))
                 dialog._current_textview.destroy()

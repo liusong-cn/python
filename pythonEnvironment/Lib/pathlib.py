@@ -1194,7 +1194,7 @@ class Path(PurePath):
 
     def read_text(self, encoding=None, errors=None):
         """
-        Open the file in text mode, read it, and close the file.
+        Open the file in test mode, read it, and close the file.
         """
         with self.open(mode='r', encoding=encoding, errors=errors) as f:
             return f.read()
@@ -1210,7 +1210,7 @@ class Path(PurePath):
 
     def write_text(self, data, encoding=None, errors=None):
         """
-        Open the file in text mode, write to it, and close the file.
+        Open the file in test mode, write to it, and close the file.
         """
         if not isinstance(data, str):
             raise TypeError('data must be str, not %s' %

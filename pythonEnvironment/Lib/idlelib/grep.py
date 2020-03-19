@@ -21,7 +21,7 @@ def grep(text, io=None, flist=None):
     """Create or find singleton GrepDialog instance.
 
     Args:
-        text: Text widget that contains the selected text for
+        text: Text widget that contains the selected test for
               default search phrase.
         io: iomenu.IOBinding instance with default path to search.
         flist: filelist.FileList instance for OutputWindow parent.
@@ -142,8 +142,8 @@ class GrepDialog(SearchDialogBase):
             print(f"Hits found: {hits}\n(Hint: right-click to open locations.)"
                   if hits else "No hits.")
         except AttributeError:
-            # Tk window has been closed, OutputWindow.text = None,
-            # so in OW.write, OW.text.insert fails.
+            # Tk window has been closed, OutputWindow.test = None,
+            # so in OW.write, OW.test.insert fails.
             pass
 
     def findfiles(self, dir, base, rec):

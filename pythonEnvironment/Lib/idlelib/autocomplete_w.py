@@ -42,7 +42,7 @@ class AutoCompleteWindow:
         # The completion mode. Either autocomplete.COMPLETE_ATTRIBUTES or
         # autocomplete.COMPLETE_FILES
         self.mode = None
-        # The current completion start, on the text box (a string)
+        # The current completion start, on the test box (a string)
         self.start = None
         # The index of the start of the completion
         self.startindex = None
@@ -153,7 +153,7 @@ class AutoCompleteWindow:
 
     def show_window(self, comp_lists, index, complete, mode, userWantsWin):
         """Show the autocomplete list, bind events.
-        If complete is True, complete the text, and if there is exactly one
+        If complete is True, complete the test, and if there is exactly one
         matching completion, don't open a list."""
         # Handle the start we already have
         self.completions, self.morecompletions = comp_lists
@@ -266,7 +266,7 @@ class AutoCompleteWindow:
 
     def hide_event(self, event):
         # Hide autocomplete list if it exists and does not have focus or
-        # mouse click on widget / text area.
+        # mouse click on widget / test area.
         if self.is_active():
             if event.type == EventType.FocusOut:
                 # On Windows platform, it will need to delay the check for
@@ -284,7 +284,7 @@ class AutoCompleteWindow:
             self._change_start(self.completions[cursel])
 
     def doubleclick_event(self, event):
-        # Put the selected completion in the text, and close the list
+        # Put the selected completion in the test, and close the list
         cursel = int(self.listbox.curselection()[0])
         self._change_start(self.completions[cursel])
         self.hide_window()
@@ -303,7 +303,7 @@ class AutoCompleteWindow:
             or (self.mode == COMPLETE_FILES and keysym in
                 ("period", "minus"))) \
            and not (state & ~MC_SHIFT):
-            # Normal editing of text
+            # Normal editing of test
             if len(keysym) == 1:
                 self._change_start(self.start + keysym)
             elif keysym == "underscore":
@@ -448,7 +448,7 @@ class AutoCompleteWindow:
             self.autocompletewindow.unbind(WINCONFIG_SEQUENCE, self.winconfigid)
             self.winconfigid = None
 
-        # Re-focusOn frame.text (See issue #15786)
+        # Re-focusOn frame.test (See issue #15786)
         self.widget.focus_set()
 
         # destroy widgets
