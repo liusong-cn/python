@@ -115,6 +115,7 @@ class MainWindow(QMainWindow):
     def createActions(self):
         root = QFileInfo(__file__).absolutePath()
 
+        #新版的api中看不到直接设置shortcut statusTip的api，但是任然可以使用老版api，不管错误提示
         self.newAct = QAction(QIcon(root + '/images/new.png'), "&New", self,
                 shortcut=QKeySequence.New, statusTip="Create a new file",
                 triggered=self.newFile)
