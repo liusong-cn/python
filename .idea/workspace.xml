@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="查询jd商品库存，抢口罩程序参考https://github.com/cycz/jdBuyMask.git">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonLearning/swan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonspace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrampy/mp3/不凡（动画《凡人修仙传》第一季 凡人风起天南 OP）（翻自 王铮亮）.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrampy/mp3/像鱼.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
@@ -57,7 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/scrampy/vip_music.py" />
   </component>
   <component name="RecentsManager">
@@ -74,8 +74,8 @@
       <recent name="D:\pythonspace\scrampy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.swan (1)">
-    <configuration name="contextmenu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.request_header">
+    <configuration name="request_header" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,12 +83,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_pyqt5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_pyqt5/contextmenu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/request_header.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.request_header" />
         <item itemvalue="Python.swan (1)" />
         <item itemvalue="Python.swan" />
         <item itemvalue="Python.vip_music1" />
         <item itemvalue="Python.toolbar" />
-        <item itemvalue="Python.contextmenu" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +306,11 @@
       <workItem from="1603120833385" duration="358000" />
       <workItem from="1604491254120" duration="3355000" />
       <workItem from="1605019638855" duration="1140000" />
+      <workItem from="1615739715572" duration="563000" />
+      <workItem from="1615797455925" duration="368000" />
+      <workItem from="1615797832766" duration="1758000" />
+      <workItem from="1615799642866" duration="405000" />
+      <workItem from="1615800111497" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="learn python">
       <created>1574912556934</created>
@@ -391,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584524680766</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="爬虫学习">
+      <created>1615798084583</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615798084583</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,45 +448,50 @@
     <MESSAGE value="查询jd商品库存，抢口罩程序参考https://github.com/cycz/jdBuyMask.git" />
     <MESSAGE value="python复习" />
     <MESSAGE value="[description]:review python base" />
-    <option name="LAST_COMMIT_MESSAGE" value="[description]:review python base" />
+    <MESSAGE value="爬虫学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬虫学习" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602910824849">
+    <state x="520" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615798100319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602910824849" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1605020822016">
+    <state x="520" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615798100319" />
+    <state x="517" y="114" key="CommitChangelistDialog2" timestamp="1615800817377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605020822016" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1605020822016">
+    <state x="517" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615800817377" />
+    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog" timestamp="1615800337329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605020822016" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1605020822016">
+    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615800337329" />
+    <state x="395" y="350" key="FileChooserDialogImpl" timestamp="1615800460252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605020822016" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1605020822016">
+    <state x="395" y="350" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615800460252" />
+    <state x="689" y="242" key="RollbackChangesDialog" timestamp="1615798383276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605020822016" />
-    <state x="825" y="231" key="RollbackChangesDialog" timestamp="1605020653309">
+    <state x="689" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615798383276" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1615800806637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="825" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605020653309" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1605020781810">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615800806637" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615798228586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605020781810" />
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600479599598">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615798228586" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615740255939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600479599598" />
-    <state x="623" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602853140161">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615740255939" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1615739878498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602853140161" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615739878498" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615740081575">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615740081575" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,6 +550,7 @@
     <SUITE FILE_PATH="coverage/pythonspace$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1574908438661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$class.coverage" NAME="class Coverage Results" MODIFIED="1574911453379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/dev_py$vip_music1.coverage" NAME="vip_music1 Coverage Results" MODIFIED="1604491463192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
+    <SUITE FILE_PATH="coverage/dev_py$request_header.coverage" NAME="request_header Coverage Results" MODIFIED="1615800726432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/pythonspace$chr_test.coverage" NAME="chr_test Coverage Results" MODIFIED="1581335435392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$compare_operator.coverage" NAME="compare_operator Coverage Results" MODIFIED="1574930966964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$toolbar.coverage" NAME="toolbar Coverage Results" MODIFIED="1584610428796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_pyqt5" />
