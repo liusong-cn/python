@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="查询jd商品库存，抢口罩程序参考https://github.com/cycz/jdBuyMask.git">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spider/beautifulsoup1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrampy/mp3/不凡（动画《凡人修仙传》第一季 凡人风起天南 OP）（翻自 王铮亮）.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrampy/mp3/像鱼.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,29 @@
       <recent name="D:\pythonspace\scrampy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.request_header">
+  <component name="RunManager" selected="Python.beautifulsoup1">
+    <configuration name="beautifulsoup1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/beautifulsoup1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="request_header" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +109,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/request_header.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="request_learn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/request_learn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,57 +183,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="toolbar" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_pyqt5" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_pyqt5/toolbar.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vip_music1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrampy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrampy/vip_music1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.beautifulsoup1" />
+        <item itemvalue="Python.request_learn" />
         <item itemvalue="Python.request_header" />
         <item itemvalue="Python.swan (1)" />
         <item itemvalue="Python.swan" />
-        <item itemvalue="Python.vip_music1" />
-        <item itemvalue="Python.toolbar" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +308,7 @@
       <workItem from="1615797455925" duration="368000" />
       <workItem from="1615797832766" duration="1758000" />
       <workItem from="1615799642866" duration="405000" />
-      <workItem from="1615800111497" duration="684000" />
+      <workItem from="1615800111497" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="learn python">
       <created>1574912556934</created>
@@ -403,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615798084583</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新python解释器路径">
+      <created>1615800868602</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615800868602</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,25 +454,42 @@
     <MESSAGE value="python复习" />
     <MESSAGE value="[description]:review python base" />
     <MESSAGE value="爬虫学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="爬虫学习" />
+    <MESSAGE value="更新python解释器路径" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新python解释器路径" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615798100319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="520" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615798100319" />
-    <state x="517" y="114" key="CommitChangelistDialog2" timestamp="1615800817377">
+    <state x="517" y="114" key="CommitChangelistDialog2" timestamp="1615800867733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615800817377" />
-    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog" timestamp="1615800337329">
+    <state x="517" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615800867733" />
+    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog" timestamp="1615800840961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615800337329" />
-    <state x="395" y="350" key="FileChooserDialogImpl" timestamp="1615800460252">
+    <state x="368" y="92" width="1536" height="858" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615800840961" />
+    <state x="395" y="350" key="FileChooserDialogImpl" timestamp="1615801642926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="395" y="350" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615800460252" />
+    <state x="395" y="350" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615801642926" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1615802116219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615802116219" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1615802116219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615802116219" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1615802116219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615802116219" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1615802116219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615802116219" />
     <state x="689" y="242" key="RollbackChangesDialog" timestamp="1615798383276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -476,10 +498,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615800806637" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615798228586">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615800871571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615798228586" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615800871571" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615740255939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -532,10 +554,12 @@
     <SUITE FILE_PATH="coverage/dev_py$Swan.coverage" NAME="Swan Coverage Results" MODIFIED="1605020243332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$TestUseVarAll__1_.coverage" NAME="TestUseVarAll (1) Coverage Results" MODIFIED="1559289327064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$MyFirstClass.coverage" NAME="MyFirstClass Coverage Results" MODIFIED="1560393922067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dev_py$beautifulsoup1.coverage" NAME="beautifulsoup1 Coverage Results" MODIFIED="1615801249343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/pythonspace$MyFunction.coverage" NAME="MyFunction Coverage Results" MODIFIED="1558321288664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$netease.coverage" NAME="netease Coverage Results" MODIFIED="1581245219083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$Fnmatch.coverage" NAME="Fnmatch Coverage Results" MODIFIED="1559638749428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyio" />
     <SUITE FILE_PATH="coverage/pythonspace$vip_music1.coverage" NAME="vip_music1 Coverage Results" MODIFIED="1584345923267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
+    <SUITE FILE_PATH="coverage/dev_py$request_learn.coverage" NAME="request_learn Coverage Results" MODIFIED="1615800903622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/pythonspace$my_review.coverage" NAME="my_review Coverage Results" MODIFIED="1584518134433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$MetaClass.coverage" NAME="MetaClass Coverage Results" MODIFIED="1558920831906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$LTD.coverage" NAME="LTD Coverage Results" MODIFIED="1560408925119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -550,7 +574,7 @@
     <SUITE FILE_PATH="coverage/pythonspace$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1574908438661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$class.coverage" NAME="class Coverage Results" MODIFIED="1574911453379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/dev_py$vip_music1.coverage" NAME="vip_music1 Coverage Results" MODIFIED="1604491463192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
-    <SUITE FILE_PATH="coverage/dev_py$request_header.coverage" NAME="request_header Coverage Results" MODIFIED="1615800726432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/dev_py$request_header.coverage" NAME="request_header Coverage Results" MODIFIED="1615800881071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/pythonspace$chr_test.coverage" NAME="chr_test Coverage Results" MODIFIED="1581335435392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$compare_operator.coverage" NAME="compare_operator Coverage Results" MODIFIED="1574930966964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$toolbar.coverage" NAME="toolbar Coverage Results" MODIFIED="1584610428796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_pyqt5" />
