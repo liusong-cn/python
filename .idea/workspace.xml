@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/excel/ExcelDataHandle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel/ExcelHandle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel/智能营销 - 任务进度.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrampy/jd_crawl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonspace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/ExcelDataHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel/ExcelDataHandle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/scrampy/vip_music.py" />
   </component>
   <component name="RecentsManager">
@@ -346,7 +340,7 @@
       <workItem from="1629510438175" duration="31000" />
       <workItem from="1629854328611" duration="6660000" />
       <workItem from="1629878567731" duration="3096000" />
-      <workItem from="1629941760789" duration="6291000" />
+      <workItem from="1629941760789" duration="20313000" />
     </task>
     <task id="LOCAL-00001" summary="learn python">
       <created>1574912556934</created>
@@ -446,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615800868602</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pandas处理数据学习">
+      <created>1629973841694</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629973841694</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,13 +494,22 @@
     <MESSAGE value="[description]:review python base" />
     <MESSAGE value="爬虫学习" />
     <MESSAGE value="更新python解释器路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新python解释器路径" />
+    <MESSAGE value="pandas处理数据学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="pandas处理数据学习" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1978" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628757221924">
       <screen x="1366" y="-113" width="1920" height="1040" />
     </state>
     <state x="1978" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1628757221924" />
+    <state x="2195" y="105" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1630058415200">
+      <screen x="1366" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="2195" y="105" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1630058415200" />
+    <state x="1926" y="0" key="CommitChangelistDialog2" timestamp="1629973840404">
+      <screen x="1366" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="1926" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1629973840404" />
     <state x="2164" y="137" key="FileChooserDialogImpl" timestamp="1629335785441">
       <screen x="1366" y="-113" width="1920" height="1040" />
     </state>
@@ -536,10 +546,14 @@
       <screen x="1366" y="-113" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1628850713969" />
-    <state x="1870" y="32" key="SettingsEditor" timestamp="1629879436629">
+    <state x="1870" y="32" key="SettingsEditor" timestamp="1630058419923">
       <screen x="1366" y="-113" width="1920" height="1040" />
     </state>
-    <state x="1870" y="32" key="SettingsEditor/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1629879436629" />
+    <state x="1870" y="32" key="SettingsEditor/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1630058419923" />
+    <state x="1918" y="140" key="Vcs.Push.Dialog.v2" timestamp="1629973904387">
+      <screen x="1366" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="1918" y="140" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-113.1920.1040@1366.-113.1920.1040" timestamp="1629973904387" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
