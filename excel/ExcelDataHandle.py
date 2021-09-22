@@ -205,6 +205,17 @@ def pandas_data_stack():
     ]))
     print(tuples)
 
+def pandas_read_excel():
+    """
+    读excel
+    :return:
+    """
+    df = pd.DataFrame(pd.read_excel('智能营销 - 任务进度.xlsx'))
+    # excel首行为列头信息，不计入索引，即excel行号为2的在数据索引中为序号0，以此类推
+    # print(df.iloc[1])
+    print(df.groupby(by='部门')['状态'].count())
+
+
 def test(
         name: int = 1) -> int:
     """
@@ -226,4 +237,5 @@ if __name__ == '__main__':
     # pandas_data_concat()
     # pandas_data_append()
     # pandas_data_group()
-    pandas_data_stack()
+    # pandas_data_stack()
+    pandas_read_excel()
