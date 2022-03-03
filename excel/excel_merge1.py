@@ -2,23 +2,28 @@ import pandas as pd
 import os
 
 dfs = []
-dir = '/Users/ls/Downloads/bq_new2'
-des = '/Users/ls/Downloads/bq_3d1.xlsx'
+dir = '/Users/ls/Downloads/non_conver'
+des = '/Users/ls/Downloads/non_conver.xlsx'
 for root, dirs, files in os.walk(dir):
     for file in files:
         file_name = os.path.join(root, file)
 
         df = pd.read_excel(file_name)
+        # print(df.loc[0,"sku_id"])
+        for i in range(len(df)):
+            d = str(df.loc[i,"task_id"])
+            mid = len(d)//2
+            df.loc[i,"task_id"] = '20' + d[0:mid] + '3' + d[mid:len(d)] + '1'
+
         dfs.append(df)
 all_data = pd.concat(dfs)
-all_data.rename(columns={'dt': '日期',
-                         'pin_count':'付款人数',
-
-                         'pay_amount':'付款金额',
-                         'non_bought_pin_count': '付款-未购人数',
-                         'bought_pin_count': '付款-曾购人数',
-                         'non_bought_pay_count': '付款-曾购金额',
-                         'bought_pay_amount':'付款-未购金额'}, inplace=True)
+all_data.rename(columns={'sku_id': 'sku_id',
+                         'sku_name':'sku',
+                         'parchage_num':'加购人数',
+                         'order_num': '下单人数',
+                         'payment_num': '付款人数',
+                         'task_id': '任务id'
+                        }, inplace=True)
 # print(all_data.columns)
 
-all_data.to_excel(des, index=False, encoding='gbk')
+# all_data.to_excel(des, index=False, encoding='gbk')
