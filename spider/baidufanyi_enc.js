@@ -32,7 +32,7 @@ function tl(query) {
     let tk;
     // key - gtk
     let key = `${String.fromCharCode(103)}${String.fromCharCode(116)}${String.fromCharCode(107)}`;
-
+    let gtk = '320305.131321201';
     if (gtk !== null) {
         tk = gtk;
     } else {
@@ -97,4 +97,14 @@ function tl(query) {
     rlt < 0 && (rlt = (rlt & 2147483647) + 2147483648);
     rlt %= 1E6;
     return `${rlt.toString()}.${rlt ^ tk0}`;
+}
+
+function rl(num, rule) {
+    for (let i = 0; i < rule.length - 2; i += 3) {
+        let d = rule.charAt(i + 2);
+        d = 'a' <= d ? d.charCodeAt(0) - 87 : Number(d);
+        d = '+' === rule.charAt(i + 1) ? num >>> d : num << d;
+        num = '+' === rule.charAt(i) ? num + d & 4294967295 : num ^ d;
+    }
+    return num;
 }
