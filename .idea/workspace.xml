@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="合并excel功能开发">
+    <list default="true" id="59408362-c117-4b26-985f-1cb4fbfcdf48" name="Default Changelist" comment="合并excel">
+      <change afterPath="$PROJECT_DIR$/algorithm/nqueen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/baidu_fanyi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/baidufanyi_enc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonspace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/excel_merge1.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel/excel_merge1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_pyqt5/demo_messagebox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_pyqt5/demo_messageboxwin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrampy/bs4/beautiful_soup_demo1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrampy/bs4/bs_demo2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +42,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1hi2S56CscnYeGd14KMnZT6JSAI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -76,8 +92,8 @@
       <recent name="D:\pythonspace\scrampy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.excel_merge1">
-    <configuration name="FirstScrapy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.baidu_fanyi">
+    <configuration name="baidu_fanyi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,12 +101,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/FirstScrapy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/baidu_fanyi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="beautiful_soup_demo1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,12 +123,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrampy/bs4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrampy/bs4/beautiful_soup_demo1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bs_demo2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="excel_merge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,12 +145,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrampy/bs4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/excel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrampy/bs4/bs_demo2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excel/excel_merge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +181,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pin_count_request" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="nqueen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,12 +189,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fly" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fly/pin_count_request.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/nqueen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.baidu_fanyi" />
+        <item itemvalue="Python.nqueen" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.excel_merge" />
         <item itemvalue="Python.excel_merge1" />
-        <item itemvalue="Python.bs_demo2" />
-        <item itemvalue="Python.FirstScrapy" />
-        <item itemvalue="Python.beautiful_soup_demo1" />
-        <item itemvalue="Python.pin_count_request" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +345,23 @@
       <workItem from="1637683442317" duration="804000" />
       <workItem from="1638696630658" duration="7184000" />
       <workItem from="1641364514118" duration="975000" />
-      <workItem from="1646295588955" duration="4037000" />
+      <workItem from="1646295588955" duration="4079000" />
+      <workItem from="1646378711239" duration="1444000" />
+      <workItem from="1646380187119" duration="405000" />
+      <workItem from="1646380635223" duration="1324000" />
+      <workItem from="1646638947990" duration="1778000" />
+      <workItem from="1646704981357" duration="146000" />
+      <workItem from="1646705560254" duration="145000" />
+      <workItem from="1653029937126" duration="163000" />
+      <workItem from="1653037898325" duration="1369000" />
+      <workItem from="1656247150396" duration="676000" />
+      <workItem from="1656321626818" duration="18000" />
+      <workItem from="1656808429288" duration="2901000" />
+      <workItem from="1659340630122" duration="1285000" />
+      <workItem from="1659348810741" duration="24000" />
+      <workItem from="1659349003726" duration="641000" />
+      <workItem from="1659410697214" duration="468000" />
+      <workItem from="1659424847393" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="learn python">
       <created>1574912556934</created>
@@ -450,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641364946935</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="合并excel">
+      <created>1646303154868</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1646303154868</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +556,8 @@
     <MESSAGE value="pandas学习" />
     <MESSAGE value="圈选小工具开发" />
     <MESSAGE value="合并excel功能开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并excel功能开发" />
+    <MESSAGE value="合并excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并excel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,11 +575,6 @@
           <url>file://$PROJECT_DIR$/scrampy/bqg_crawl.py</url>
           <line>5</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrampy/bs4/bs_demo2.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -592,6 +627,7 @@
     <SUITE FILE_PATH="coverage/pythonspace$vip_music.coverage" NAME="vip_music Coverage Results" MODIFIED="1581333592494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$UseVarAll.coverage" NAME="UseVarAll Coverage Results" MODIFIED="1577695487962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1574908438661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
+    <SUITE FILE_PATH="coverage/python$excel_merge.coverage" NAME="excel_merge Coverage Results" MODIFIED="1646379332460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excel" />
     <SUITE FILE_PATH="coverage/pythonspace$FirstScrapy.coverage" NAME="FirstScrapy Coverage Results" MODIFIED="1576658365147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/dev_py$vip_music1.coverage" NAME="vip_music1 Coverage Results" MODIFIED="1604491463192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$tuple.coverage" NAME="tuple Coverage Results" MODIFIED="1578388096852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
@@ -599,6 +635,7 @@
     <SUITE FILE_PATH="coverage/pythonspace$printFunc.coverage" NAME="printFunc Coverage Results" MODIFIED="1574610842274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$submenu.coverage" NAME="submenu Coverage Results" MODIFIED="1584604637351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_pyqt5" />
     <SUITE FILE_PATH="coverage/pythonspace$FunParm.coverage" NAME="FunParm Coverage Results" MODIFIED="1574610761443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$baidu_fanyi.coverage" NAME="baidu_fanyi Coverage Results" MODIFIED="1659348821627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/pythonspace$class.coverage" NAME="class Coverage Results" MODIFIED="1574911453379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$netease.coverage" NAME="netease Coverage Results" MODIFIED="1581245219083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrampy" />
     <SUITE FILE_PATH="coverage/pythonspace$operator.coverage" NAME="operator Coverage Results" MODIFIED="1574921809294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
@@ -608,6 +645,8 @@
     <SUITE FILE_PATH="coverage/dev_py$swan__1_.coverage" NAME="swan (1) Coverage Results" MODIFIED="1605020822009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$loop_logic_decision.coverage" NAME="loop&amp;logic_decision Coverage Results" MODIFIED="1577697011456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonspace$MyFirstClass.coverage" NAME="MyFirstClass Coverage Results" MODIFIED="1560393922067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$demo.coverage" NAME="demo Coverage Results" MODIFIED="1646380981479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python$nqueen.coverage" NAME="nqueen Coverage Results" MODIFIED="1653039875407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/pythonspace$use_module.coverage" NAME="use_module Coverage Results" MODIFIED="1574912404253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonLearning" />
     <SUITE FILE_PATH="coverage/pythonspace$TestUseVarAll__1_.coverage" NAME="TestUseVarAll (1) Coverage Results" MODIFIED="1559289327064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
