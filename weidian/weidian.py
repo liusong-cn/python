@@ -204,6 +204,13 @@ def login(user: str, password: str):
     }
     r = requests.post('https://sso.weidian.com/user/login', data=data, headers=headers)
     print(r.text)
+    # 字典cookie
+    cookies = requests.utils.dict_from_cookiejar(r.cookies)
+    cookie_str = '';
+    for key,value in cookies.items():
+        cookie_str = cookie_str + ';' + key + "=" + value;
+        cookie_str[1:len(cookie_str)]
+    print(cookie_str)
 
 
 if __name__ == '__main__':
