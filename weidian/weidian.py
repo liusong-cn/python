@@ -211,12 +211,12 @@ def login(user: str, password: str):
     print(r.text)
     # 字典cookie
     cookies = requests.utils.dict_from_cookiejar(r.cookies)
-    cookie_str = '';
+    cookie_str = ''
     for key, value in cookies.items():
-        cookie_str = cookie_str + ';' + key + "=" + value;
+        cookie_str = cookie_str + ';' + key + "=" + value
     cookie_str = cookie_str[1:]
     print(cookie_str)
-    return cookies;
+    return cookies
 
 
 def create_order(cookies: dict):
@@ -251,6 +251,7 @@ def create_order(cookies: dict):
         "sec-fetch-dest": "empty",
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-site",
+        "sec-ch-ua-platform": "Windows",
         "user-agent": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/83.0.4103.116Safari/537.36"
     }
     print(param_data)
