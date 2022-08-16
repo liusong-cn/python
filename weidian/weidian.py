@@ -9,11 +9,14 @@ import execjs
 import requests
 import time
 import gzip
-from requests_toolbelt import MultipartEncoder
+
+figureprint = {}
+trace = {}
 
 
 def login(user: str, password: str):
     tm = int(time.time() * 1000)
+    global figureprint
     figureprint = {
         "basic": {
             "platform": "win32",
@@ -160,6 +163,7 @@ def login(user: str, password: str):
         "visTime": [str(tm + 3181)],
         "other": {"adblock": False, "hasLiedLanguages": False, "hasLiedResolution": False, "hasLiedOs": False}
     }
+    global trace
     trace = {"keypress": True, "scroll": True, "click": True, "mousemove": True,
              "mousemoveData": [351, 382, 435, 1058, 475, 799, 249, 1060, 3365, 1837],
              "keypressData": [7620, 71730, 32135, 39145, 63830, 136075, 119610, 175895, 119605, 103730],
@@ -208,21 +212,63 @@ def login(user: str, password: str):
     # 字典cookie
     cookies = requests.utils.dict_from_cookiejar(r.cookies)
     cookie_str = '';
-    for key,value in cookies.items():
+    for key, value in cookies.items():
         cookie_str = cookie_str + ';' + key + "=" + value;
     cookie_str = cookie_str[1:]
     print(cookie_str)
     return cookies;
 
+
 def create_order(cookies: dict):
-    param = {"channel":"bjh5","source_id":"88208fe618827991903857fece63c546","q_pv_id":"12b4000001829fd82bb30a20c4bd38d9","biz_type":1,"buyer":{"buyer_id":"1429671525","eat_in_table_name":""},"shop_list":[{"shop_id":"1733124914","f_shop_id":"","sup_id":"","item_list":[{"item_id":"4746057450","quantity":1,"item_sku_id":"0","ori_price":"49.00","price":"49.00","extend":{},"price_type":1,"discount_list":[],"item_convey_info":{}}],"order_type":3,"ori_price":"49.00","price":"49.00","express_fee":"0.00","discount_list":[],"invalid_item_list":[]}],"deliver_type":0,"is_no_ship_addr":1,"total_pay_price":"49.00","total_vjifen":"","wfr":"","appid":"","discount_list":[],"invalid_shop_list":[],"pay_type":0}
-    context = {"shopping_center":"1733124914"}
+    param = {"channel": "bjh5", "source_id": "88208fe618827991903857fece63c546",
+             "q_pv_id": "14ff00000182a77523b60a20e4db3d9e", "biz_type": 1,
+             "buyer": {"buyer_id": "1429671525", "eat_in_table_name": ""}, "shop_list": [
+            {"shop_id": "1733124914", "f_shop_id": "", "sup_id": "", "item_list": [
+                {"item_id": "4746057450", "quantity": 1, "item_sku_id": "0", "ori_price": "49.00", "price": "49.00",
+                 "extend": {}, "price_type": 1, "discount_list": [], "item_convey_info": {}}], "order_type": 3,
+             "ori_price": "49.00", "price": "49.00", "express_fee": "0.00", "discount_list": [],
+             "invalid_item_list": []}], "deliver_type": 0, "is_no_ship_addr": 1, "total_pay_price": "49.00",
+             "total_vjifen": "", "wfr": "", "appid": "", "discount_list": [], "invalid_shop_list": [], "pay_type": 0}
+    context = {"shopping_center": "1733124914"}
     # 加密参数
-    udc = 'H4sIAAAAAAAAA%2BVVC9ojKQi8EvJSj%2BPzFHP4LeieyfybvcEmXyc2IFJFqVTbInx2%2FPD7EJV76F%2Bf1WXd9JWWf816ub72ms8Uumupd8PkDmvXVuS6T%2B6q2%2FTKV0rqRUs5zy9zY9mlITtqaKLbbx3efeFb%2BIrxEbi46YL1VKtNJpMWP66V%2FcKqTOIRl57jiEGcwGp452qZT%2FmiItYiJk0P98hSqRJ8ZtXNWaf3qrGqiFRkFOSNtac2Ax5dvDjiu0%2BP3DFLML6ZTbxlRRu%2BKwX1aFb%2F%2B6FA55zVYLaJF3cvmNN%2FrvnhCgUSb2rUadCkVS4iqk0%2FeO1zL9l1tz32OuXU0884swBj1BB5PdY4prUDp9Uatqrho%2FFwCD%2BqycqOX7ofToAHnUY%2FWM3Dj77Q1Kw3ZmkLzvCGvFT%2FsqPv5FrM1fRoB9QGb0dP1BvwIoqOclTmNfqcTMQYdYPlg1XgrcEsKq3%2B6sFQs0QGjKcH07GmIvpj1ej8i9ATQfignIy6iS1yBsIScag87A9bMQuNDk3BprTU4CEPpDvQGVgBMkFuDzw5rwBfKMGg3IKEqAz%2BsIQW%2FfUnhgdplQLtQJcjEUQd%2FYuDERHwbsTNwJDWnqwvZA02s7%2B0v225CyzRTWTsiTZib74ffEv0%2FmvVrrPGjoEtuwX0YGElbmxpLYAMfaGvqlYKdFMyd3%2F%2BfX9l9IhJdqGwfLu5uiRLTx0W%2FALxCdZDT6G6WL92xFyLpgT%2BwHpTw%2F0%2FasdxY%2BgOdisYN3orC0ZS2YiP0aOU79lqobfUJkYnGEW%2FOLSR%2B6RlvBLUHXOC068c2GnZCQN79uXFGYIsgZ4fvRFoRZ7Yq0LVQg3k%2FtbbfCdLceplVhwH48cZQ88ZA2WDL3zrc65ozBc%2Bdf5PT8%2BWKBR6l2Q0dsGPewVMtlSu6Idd%2B9SDi4ixPiHbw3GNs1gmvZde43aH3Atw3Al3GQ7WGFm%2F86TNBq07Y1RprnNiNNaYHDZeg%2BqQZ1S4xmjOLV3Cu%2Fo9u0W%2BuxMJpr6rhoVHKTTMho3BQ404HtI%2F3yWLWFCbVlwdhyke3LTFyvsIIwVpUxpdzsWFDTUz7pSLA9svUlxsH6xoc%2FEvEv5zHf16i7Be9z8jcTCtRQgAAA%3D%3D'
-    param_data = 'param={}&context={}&udc={}'.format(param,context,udc)
-    r = requests.post('https://thor.weidian.com/vbuy/CreateOrder/1.0',cookies=cookies,data=param_data,headers={'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'})
+    # udc = 'H4sIAAAAAAAAA%2BVUiZUlIQhMSW4MR1Gj2OC39M%2FslcLaTxsFoSjobpHVMNZd%2BGtiDG3%2FjBKpcwWifK%2B03iCtmk9P7Xh1WnyOaU4b5ZuKl%2B4pUyus9r8u26AoOp9V%2BaQcSngHhhRdfmJ498JDfMR4C1ScWjjdYZEyuSn5dg32g1PlJn7tnmY7bGAnODXsOez5Qyhdxkpikrq5Xy%2FRokFnFm7OOr2H3qgiEvAo8HtjT01TXVpcfO27T7%2B%2B7y2BfJ438XyIFnRHCHj0of%2Be7Wbn%2FNDgtomTuxPu9L9j%2FubKBUu%2B2UGckYOrTgOoiIWVjZ0D0Sdv%2BGi4rRLID7kpqwD50mNsYmGonU0rWwbugHyAwxMnNSMze45ceXrr1LlLt%2B49e%2FXVdz8DwQcPGTZi1FgzZs4%2B56xCj5RWVq9R2NZatHzFyjVWrb1px%2B577NkCDB1U5jKAtaUie2AIMHHuu3VN4Kpw6BVWYKgZqkLeDXt42LDtvkxQ1d38s3u3%2BvfuS2f3xq1FSLOI2z1gh1%2Bb%2F1mp9qlUm6jmwROf6ijsXXjH%2FE97MF8WGnKrAIQG9v%2F6OsHkxfzNq%2F1Ggg%2BZEfl244fduL0ss339NJIz0UFtMKQVRDbpI5mKPYnHPPGkOKI9eTCjwZSvJC237yehxmgkHgFnVPNJJ7bxR0IKzP076juh0jbM0Mlo6PBGEfiN8a%2FHPBt54RzvisZ3Xvg2v2YhqXaGB9r6iNxf2QR704ccWSWxbq9ibEv%2F0W7PgawTn0%2F6xwNCJIP8J7MxNt2JBQAA'
+    udc = get_ua()
+    param_data = {
+        "param": param,
+        "context": context,
+        "udc": udc
+    }
+    headers = {
+        "accept": "application/json,*/*",
+        "accept-language": "zh-CN,zh;q=0.9",
+        "cache-control": "no-cache",
+        "content-length": "2093",
+        "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
+        "origin": "https://weidian.com",
+        "pragma": "no-cache",
+        "referer": "https://weidian.com/",
+        "sec-ch-ua": '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/83.0.4103.116Safari/537.36"
+    }
+    print(param_data)
+    r = requests.post('https://thor.weidian.com/vbuy/CreateOrder/1.0', cookies=cookies, data=param_data,
+                      headers=headers)
     print(r.text)
 
+
+def get_ua():
+    with open('wd.js', 'r', encoding='utf-8')as f:
+        content = f.read()
+    ctx = execjs.compile(content)
+    res = ctx.call('result', figureprint) + '|' + ctx.call('result', trace) + '|' + hex(int(time.time() * 1000))[2:]
+    ua = (base64.b64encode(gzip.compress(res.encode()))).decode()
+    ua = "H4sIAAAAAAAAA" + ua[13:]
+    return ua;
+
+
 if __name__ == '__main__':
-    cookie_dict = login('18349220243', 'lhs22@ri')
-    # create_order(cookie_dict)
+    cookie_dict = login('', '')
+    create_order(cookie_dict)
